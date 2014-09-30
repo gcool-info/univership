@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Quicksand:300);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
 
 html, body {
 	max-width: 100%;
@@ -16,18 +16,16 @@ body {
 
 .baseline {
 	font-size: 1.5em;
-	width: 14em;
-	margin-left: auto;
-	margin-right: auto;
+	padding-left: 5%;
+	padding-right: 40%;
+	vertical-align: top;
+	line-height: 1.5em;
 }
 
 hr {
-	height: 2em;
-	overflow: hidden;
 	border: none;
-	margin: 1em auto 1em auto;
-	overflow:hidden;
-	width: 20em;
+	overflow: hidden;
+	padding-left: 5%;
 }
 
 hr:after {
@@ -58,6 +56,7 @@ hr:after {
 	width: 100%;
 	height: 100vh;
 	border-bottom: 2px solid white;
+	display: table;
 }
 
 .bckg-half {
@@ -96,7 +95,9 @@ hr:after {
 }
 
 .splash-screen.logo {
-	width: 100%;
+	width: 30%;
+	text-align: right;
+	vertical-align: bottom
 }
 
 .splash-screen.logo.container {
@@ -105,4 +106,44 @@ hr:after {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 4em;
+}
+
+.splash-screen.logo-letters {
+	padding-left: 5%;
+	vertical-align: bottom
+}
+
+.bckg-half .logo {
+	text-align: center;
+	vertical-align: top;
+	padding-top: 30vh;
+}
+
+.bckg-half .baseline {
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-weight: 700;
+	font-size: 2em;
+	vertical-align: top;
+	padding-top: 1em;
+}
+
+/* Smartphones (portrait) ----------- */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+	body {
+		font-size: 24px;
+	}
+
+	.baseline {
+		padding-right: 10%;
+	}
+
+	.splash-screen.logo .svg {
+		width: 80%;
+	}
+
+	.splash-screen.logo-letters .svg {
+		width: 80%;
+	}
 }
