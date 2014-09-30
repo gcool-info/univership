@@ -14,6 +14,14 @@ body {
 	color: #fffff1;
 }
 
+h1 {
+	font-size: 3em;
+	line-height: 2em;
+	width: 70%;
+	margin-left: 5%;
+	margin-right: 5%
+}
+
 .baseline {
 	font-size: 1.5em;
 	padding-left: 5%;
@@ -129,10 +137,60 @@ hr:after {
 	padding-top: 1em;
 }
 
+.short-description-home {
+	border: 1px solid #fffff1;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-right: auto;
+	margin-left: auto;
+	table-layout: fixed;
+	width: 35%;
+}
+
+.short-description-home .line {
+	width: 15%;
+}
+
+.short-description-home .text {
+	text-align: left;
+	font-weight: 400;
+	font-size: 1.2em;
+	padding-left: 5%;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 15px solid #fffff1;
+	margin: 0 auto 1em auto;
+}
+
+.short-description {
+	height: 45%;
+}
+
+.short-description-home .icon{
+	width: 40%;
+	text-align: center;
+}
+
+.short-description-home .fa {
+	font-size: 3em;
+}
+
+.short-description-home .line {
+	text-align: left;
+}
+
 /* Smartphones (portrait) ----------- */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
 	body {
-		font-size: 24px;
+		font-size: 26px;
 	}
 
 	.baseline {
@@ -145,5 +203,15 @@ hr:after {
 
 	.splash-screen.logo-letters .svg {
 		width: 80%;
+	}
+
+	h1 {
+		font-size: 2em;
+		line-height: 2em;
+		width: 90%;
+	}
+
+	.short-description-home {
+		width: 60%
 	}
 }
