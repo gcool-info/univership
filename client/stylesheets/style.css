@@ -22,6 +22,11 @@ h1 {
 	margin-right: 5%
 }
 
+h3 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
 .baseline {
 	font-size: 1.5em;
 	padding-left: 5%;
@@ -187,10 +192,58 @@ hr:after {
 	text-align: left;
 }
 
+.explanation .logo-section {
+	text-align: center;
+	width: 50%;
+	padding-left: 10%;
+}
+
+.explanation .description {
+	text-align: left;
+	padding-left: 1%;
+	vertical-align: top;
+}
+
+.explanation .logo-section .top {
+	width: 55%;
+}
+
+.explanation .logo-section .middle {
+	width: 80%;
+}
+
+.explanation .logo-section .bottom {
+	width: 100%;
+}
+
+.explanation .title {
+	margin-bottom: 0;
+}
+
+.explanation .body {
+	width: 90%;
+}
+
+.explanation hr {
+	padding: 0;
+	margin-top: 0;
+	margin-left: 0;
+	width: 90%
+}
+
+.explanation .title h1 {
+	margin-bottom: 0;
+	padding: 0;
+}
+
 /* Smartphones (portrait) ----------- */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
 	body {
 		font-size: 26px;
+	}
+
+	h3 {
+		margin-top: 0;
 	}
 
 	.baseline {
@@ -213,5 +266,15 @@ hr:after {
 
 	.short-description-home {
 		width: 60%
+	}
+
+	.explanation .logo-section {
+		width: 100%;
+		vertical-align: top;
+	}
+
+	.explanation .body {
+		width: 80%;
+		font-size: 1.3em;
 	}
 }
