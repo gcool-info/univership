@@ -6,7 +6,6 @@ Template.header.rendered = function() {
 	function hideHeader() {
 		var height = $(".header").height();
 		$(".header").animate({top: -height},500);
-		console.log("running");
 		if (!showHeader) {
 			clearTimeout(t);
 			showHeader = true;
