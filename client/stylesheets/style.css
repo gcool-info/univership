@@ -20,7 +20,7 @@ h1 {
 	width: 70%;
 	margin-left: 5%;
 	margin-right: 5%;
-	padding-top: 8vh;
+	padding-top: 6vh;
 }
 
 h3 {
@@ -65,7 +65,7 @@ hr:after {
 }
 
 .header {
-	height: 8vh;
+	height: 6vh;
 	width: 100%;
 	background-color: #242424;
 	opacity: 0.8;
@@ -101,8 +101,8 @@ hr:after {
 }
 
 .bckg-half {
-	width: 49.5%;
-	height: 90%;
+	width: 100%;
+	height: 50%;
 }
 
 .bckg-full.video {
@@ -113,22 +113,15 @@ hr:after {
 	background-size: cover;
 }
 
-.bckg-half.left {
-	float: left;
-}
-
-.bckg-half.right {
-	float: right;
-}
-
 .bckg-half:hover {
-	opacity: 0.8;
+	opacity: 0.6;
+	color: #242424;
 	cursor: pointer;
-	-webkit-transition: opacity 0.2s ease-in-out;
-	-moz-transition: opacity 0.2s ease-in-out;
-	-ms-transition: opacity 0.2s ease-in-out;
-	-o-transition: opacity 0.2s ease-in-out;
-	transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .black-wavy {
@@ -163,19 +156,17 @@ hr:after {
 }
 
 .bckg-half .logo {
-	text-align: center;
-	vertical-align: top;
-	padding-top: 30vh;
+	padding-top: 6vh;	
+	float: left;
+	padding-left: 5%;
 }
 
 .bckg-half .baseline {
-	text-align: center;
-	padding-left: 10%;
-	padding-right: 10%;
-	font-weight: 700;
-	font-size: 2em;
-	vertical-align: top;
-	padding-top: 1em;
+	font-size: 4em;
+	margin: 0;
+	width: 60%;
+	padding-left: 30%;
+	padding-top: 10vh;
 }
 
 .short-description-home {
@@ -290,6 +281,37 @@ hr:after {
 }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
+}
+
+.menu-title {
+	font-size: 2vh;
+	margin-top: 1.5vh;
+	padding-left: 2em;
+	float: left;
+	font-weight: 700;
+}
+
+.menu-title:hover {
+	color: #5A8AE2;
+	cursor: pointer;
+}
+
+.social {
+	float: right;
+	margin-right: 1em;
+}
+
+.social .fa {
+	float: left;
+	font-size: 3vh;
+	margin-top: 1.5vh;
+	padding-left: 2em;
+	color: #fffff1;
+}
+
+.social .fa:hover {
+	color: #5A8AE2;
+	cursor: pointer;
 }
 
 /* Smartphones (portrait) ----------- */
