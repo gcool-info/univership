@@ -1,3 +1,9 @@
+Template.header.helpers({
+	george: function() {
+		return Meteor.users.findOne();
+	}
+});
+
 Template.header.rendered = function() { 
 
 	var showHeader = true;

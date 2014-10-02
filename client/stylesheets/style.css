@@ -28,6 +28,11 @@ h3 {
 	margin-bottom: 0;
 }
 
+a {
+	color: #fffff1;
+	text-decoration: none;
+}
+
 .play-video {
 	position: absolute;
 	top: 45%;
