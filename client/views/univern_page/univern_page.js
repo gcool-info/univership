@@ -1,3 +1,3 @@
-Template.home.rendered = function() { 
-	$('.univernPage').fullpage( { menu: true });
+Template.univernPage.rendered = function() { 
+	$('.univernPage').fullpage();
 }
