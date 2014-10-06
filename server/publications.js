@@ -17,3 +17,8 @@ Meteor.publish('skills', function() {
 Meteor.publish('processes', function() {
 	return Processes.find();
 });
+
+Meteor.publish('projectfiles', function() {
+	return Processes.find();
+});
+

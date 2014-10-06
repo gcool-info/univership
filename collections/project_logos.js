@@ -21,9 +21,9 @@ projectLogos = new FS.Collection("projectlogos", {
 });
 
 projectLogos.allow({
-  insert: function() { return true; },
+  insert: function(userId) { if (userID) return true; },
   download: function() { return true },
-  update: function() { return true },
+  update: function(userId) { if (userID) return true; },
 });
 
 

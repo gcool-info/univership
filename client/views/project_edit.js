@@ -79,7 +79,7 @@ Template.projectEdit.events({
 		var project = {
 			id: this._id,
 			previousLogo: this.logo,
-			owner: this.univernID
+			owner: this.univernID,
 		}
 
 		var handle = projectLogos.insert(e.target.files[0], function (err, fileObj) {});
