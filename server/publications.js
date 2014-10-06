@@ -13,3 +13,7 @@ Meteor.publish('projectlogos', function() {
 Meteor.publish('skills', function() {
 	return Skills.find();
 });
+
+Meteor.publish('processes', function() {
+	return Processes.find();
+});

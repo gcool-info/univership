@@ -125,5 +125,7 @@ Template.projectEdit.events({
 				});
     		}
     	}
+
+    	Router.go('project', {_id: this._id});
     }
 })
