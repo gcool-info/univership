@@ -98,7 +98,7 @@ Template.projectEdit.events({
     		title: $(e.target).find('[name=title]').val(), 
     		body: $(e.target).find('[name=project-body]').val(), 
     		type: $(e.target).find('[id=project-type]').val(),
-    		introVideo: $(e.target).find('[name=intro-video]').val(),
+    		introVideo: $(e.target).find('[name=intro-video]').val()
     	}
 
     	Projects.update(this._id, {$set: projectProperties}, function(error) { 

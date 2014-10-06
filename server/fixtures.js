@@ -47,7 +47,7 @@ if (Projects.find().count() === 0) {
 		univernID: georgeID,
 		projectID: boxduinoID,
 		peopleID: samID,
-		title: 'Physical Object Design',
+		title: 'physical-object-design',
 		body: 'I am learning how to create a tool box using a laser cutter.',
 		logo: '/general_logos/physical_object_design.svg',
 		percentage: 0.1

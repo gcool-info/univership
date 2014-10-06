@@ -12,9 +12,10 @@ Meteor.methods({
         if (user._id !== skill.univernID)
           throw new Meteor.Error(401, "Bad Univern! This is not your project!");
 
-      	if (skillId)
+      	if (skillId) 
         	Skills.remove(skillId);
         
-        Skills.insert( skill );
+        if (skill.percentage > 0)
+        	Skills.insert( skill );
   },
 });
