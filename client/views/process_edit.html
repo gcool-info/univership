@@ -1,11 +1,11 @@
 <template name="processEdit">
 	<div class="bckg-full black-wavy" style="height:100%">
 		<h1>Adding Process to {{projectName}}</h1>
-		<form>
+		<form id="processes-form">
 			{{#each processes}}
 				<div>_____________________________________________________________</div>
 				<h3>Step #{{rank}}</h3>
-				<div class="form-group" id=step-{{rank}}>
+				<div class="form-group" id="{{_id}}">
 					<label class="control-label" for="title-{{rank}}">Title</label>
 					<div class="controls">
 		                <input name="title-{{rank}}" class="form-control input-lg" type="text" value="{{title}}" placeholder="Title"/>
@@ -16,25 +16,30 @@
 	            	</div>
 	            	<label class="control-label" for="file-{{rank}}">File</label>
 					<div class="controls">
-		                <input name="file-{{rank}}" class="form-control input-lg" type="text" value="{{file}}" placeholder="File URL"/>
+						<input type="file" name="file-{{rank}}" />
 		            </div>
 	            	<label class="control-label" for="folder-{{rank}}">Folder</label>
 					<div class="controls">
-		                <input name="folder-{{rank}}" class="form-control input-lg" type="text" value="{{folder}}" placeholder="Folder URL"/>
+		                <input name="folder-{{rank}}" class="form-control input-lg" type="text" value="{{files.folder}}" placeholder="Folder URL"/>
 		            </div>
 		            <label class="control-label" for="github-{{rank}}">Github</label>
 					<div class="controls">
-		                <input name="github-{{rank}}" class="form-control input-lg" type="text" value="{{github}}" placeholder="Github URL"/>
+		                <input name="github-{{rank}}" class="form-control input-lg" type="text" value="{{files.github}}" placeholder="Github URL"/>
 		            </div>
 		            <label class="control-label" for="instructables-{{rank}}">Instructables</label>
 					<div class="controls">
-		                <input name="instructables-{{rank}}" class="form-control input-lg" type="text" value="{{instructables}}" placeholder="Instructables URL"/>
+		                <input name="instructables-{{rank}}" class="form-control input-lg" type="text" value="{{files.instructables}}" placeholder="Instructables URL"/>
 		            </div>
+		            <label class="control-label" for="video-{{rank}}">Video</label>
+					<div class="controls">
+		                <input name="video-{{rank}}" class="form-control input-lg" type="text" value="{{files.video}}" placeholder="Instructables URL"/>
+		            </div>
+		            <button type="button" class="btn btn-default btn-lg delete-process" id="{{_id}}">Delete Process</button>
 				</div>
 			{{/each}}
 			<div>_____________________________________________________________</div>
 			<button type="button" class="btn btn-default btn-lg" id="add-process">Add Process</button>
-			<input class="btn btn-block btn-primary submit" type="submit" id="save" value="Save"/>
+			<input class="btn btn-default btn-lg" type="button" id="save" value="Save"/>
 			<div>_____________________________________________________________</div>
 		</form>
 	</div>

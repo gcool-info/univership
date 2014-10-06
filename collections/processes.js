@@ -1,9 +1,9 @@
 Processes = new Meteor.Collection('processes');
 
 Meteor.methods({
-  	addProcess: function(processAttributes) {
+  	addStep: function(stepAttributes) {
       var user = Meteor.user(),
-      	project = Projects.findOne(processAttributes.projectID);
+      	project = Projects.findOne(stepAttributes.projectID);
 
         if (!user)
           throw new Meteor.Error(401, "You need to be a univern to add a project");
@@ -11,13 +11,45 @@ Meteor.methods({
       	if (user._id !== project.univernID)
           throw new Meteor.Error(401, "Bad Univern! This is not your project!");
 
-      	var process = _.extend(_.pick(processAttributes, 'projectID', 'rank'), {
+      	var step = _.extend(_.pick(stepAttributes, 'projectID', 'rank'), {
 			univernID: user._id,
 			created: new Date().getTime()
 		});
 
-      	var processId = Processes.insert(process);
+      	var processId = Processes.insert(step);
 
 		return processId;
-	}
+	},
+	deleteStep: function(step) {
+      var user = Meteor.user(),
+      	project = Projects.findOne(step.projectID);
+
+        if (!user)
+          throw new Meteor.Error(401, "You need to be a univern to add a project");
+
+      	if (user._id !== project.univernID)
+          throw new Meteor.Error(401, "Bad Univern! This is not your project!");
+
+      	Processes.remove({_id:step.id, "projectID":step.projectID});
+	},
+
+	saveStep: function(stepAttributes) {
+		var user = Meteor.user(),
+      		project = Projects.findOne(stepAttributes.projectID);
+
+      	if (!user)
+          throw new Meteor.Error(401, "You need to be a univern to add a project");
+
+      	if (user._id !== project.univernID)
+          throw new Meteor.Error(401, "Bad Univern! This is not your project!");
+
+      	var step = _.extend(_.pick(stepAttributes, 'rank', 'title', 'body', 'files'), {
+			created: new Date().getTime()
+		});
+
+		Processes.update({_id: stepAttributes.id, "projectID": project._id}, {$set: step});
+
+	},
+
+
 })
