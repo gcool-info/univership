@@ -1,5 +1,82 @@
 <template name="projectEdit">
-	<div class="bckg-full black-wavy">
+	<div class="bckg-full black-wavy" style="height:100%">
 		<h1>Editing project {{getProjectName}}</h1>
+			<form>
+			<div class="form-group">
+				<label class="control-label" for="title">Project name</label>
+				<div class="controls">
+	                <input name="title" class="form-control input-lg" type="text" value="{{getProjectName}}" placeholder="Project name"/>
+	            </div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="project-body">Project name</label>
+				<div class="controls">
+	               <textarea name="project-body" id="project-body" class="form-control" value="{{getProjectBody}}" rows="7"></textarea>
+	            </div>
+			</div>
+			<div class="logo-import">
+	            <div>Choose an .svg file for the logo:</div> 
+	            <input type="file" name="file" id="add-logo">
+	        </div>
+			<div class="project-logo">
+				<img src="{{getLogo}}" />
+			</div>
+			 <div class="form-group">
+	            <label for="project-type">Project Type</label>
+	            <div class="controls">
+	                <select id="project-type" class="form-control">
+	                    <option value="individual" selected="{{getProjectType 'individual'}}">individual</option>
+	                    <option value="placement" selected="{{getProjectType 'placement'}}">placement</option>
+	                    <option value="group" selected="{{getProjectType 'group'}}">group</option>
+	                </select>
+	            </div>
+	        </div>
+			<div>_____________________________________________________________</div>
+			<div class="form-group">
+				<label class="control-label" for="intro-video"><h3>Intro Video</h3></label>
+				<div class="controls">
+	                <input name="intro-video" class="form-control input-lg" type="text" value="{{getIntroVideo}}" placeholder="Intro Video"/>
+	            </div>
+	            <div>_____________________________________________________________</div>
+	            <h3>Skills</h3>
+	            <label class="control-label" for="user-centered-design">User Centered Design</label>
+				<div textarea="controls">
+	                <textarea name="user-centered-design-body" class="form-control input-lg" type="text" value="{{getSkill 'user-centered-design' 'body'}}" placeholder="Description" rows="5"></textarea>
+	                 <input name="user-centered-design-percentage" class="form-control input-lg" type="text" value="{{getSkill 'user-centered-design' 'percentage'}}" placeholder="Percentage"/>
+	            </div>
+	            <label class="control-label" for="physical-object-design">Physical Object Design</label>
+	            <div textarea="controls">
+	                <textarea name="physical-object-design-body" class="form-control input-lg" type="text" value="{{getSkill 'physical-object-design' 'body'}}" placeholder="Description" rows="5"></textarea>
+	                 <input name="physical-object-design-percentage" class="form-control input-lg" type="text" value="{{getSkill 'physical-object-design' 'percentage'}}" placeholder="Percentage"/>
+	            </div>
+	            <label class="control-label" for="entrepreneurship">Entrepreneurship</label>
+	            <div textarea="controls">
+	                <textarea name="entrepreneurship-body" class="form-control input-lg" type="text" value="{{getSkill 'entrepreneurship' 'body'}}" placeholder="Description" rows="5"></textarea>
+	                 <input name="entrepreneurship-percentage" class="form-control input-lg" type="text" value="{{getSkill 'entrepreneurship' 'percentage'}}" placeholder="Percentage"/>
+	            </div>
+	            <label class="control-label" for="coding">Coding</label>
+	            <div textarea="controls">
+	                <textarea name="coding-body" class="form-control input-lg" type="text" value="{{getSkill 'coding' 'body'}}" placeholder="Description" rows="5"></textarea>
+	                 <input name="coding-percentage" class="form-control input-lg" type="text" value="{{getSkill 'coding' 'percentage'}}" placeholder="Percentage"/>
+	            </div>
+	            <label class="control-label" for="graphic-design">Graphic Design</label>
+	            <div textarea="controls">
+	                <textarea name="graphic-design-body" class="form-control input-lg" type="text" value="{{getSkill 'graphic-design' 'body'}}" placeholder="Description" rows="5"></textarea>
+	                 <input name="graphic-design-percentage" class="form-control input-lg" type="text" value="{{getSkill 'graphic-design' 'percentage'}}" placeholder="Percentage"/>
+	            </div>
+	            <label class="control-label" for="communication">Communication</label>
+	            <div textarea="controls">
+	                <textarea name="communication-body" class="form-control input-lg" type="text" value="{{getSkill 'communication' 'body'}}" placeholder="Description" rows="5"></textarea>
+	                 <input name="communication-percentage" class="form-control input-lg" type="text" value="{{getSkill 'communication' 'percentage'}}" placeholder="Percentage"/>
+	            </div>
+			</div>
+			<div>_____________________________________________________________</div>
+	        <h3>Processes</h3>
+	        <div class="form-group">
+
+	        </div>
+			
+			<input class="btn btn-block btn-primary submit" type="submit" id="save" value="Save"/>
+		</form>
 	</div>
 </template>

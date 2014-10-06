@@ -1,7 +1,16 @@
 // Fixture data
 if (Projects.find().count() === 0) {
+
+	/* The user data */
+    var georgeID = Accounts.createUser({
+        username: 'gcool',
+        email: 'g_koul@hotmail.com',
+        password: 'CoolOuris=+',
+        profile : { name : "George Koulouris" },
+    });
 	
 	var boxduinoID = Projects.insert ({
+		univernID: georgeID,
 		type: 'group',
 		title: 'boxduino',
 		body: 'A project to develop easy, fun, computing-based science sessions for schools... all in a box!',
@@ -35,6 +44,7 @@ if (Projects.find().count() === 0) {
 	});
 
 	Skills.insert({
+		univernID: georgeID,
 		projectID: boxduinoID,
 		peopleID: samID,
 		title: 'Physical Object Design',

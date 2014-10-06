@@ -5,3 +5,11 @@ Meteor.publish('univerns', function() {
 Meteor.publish('projects', function() {
 	return Projects.find();
 });
+
+Meteor.publish('projectlogos', function() {
+	return projectLogos.find();
+});
+
+Meteor.publish('skills', function() {
+	return Skills.find();
+});
