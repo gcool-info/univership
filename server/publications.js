@@ -19,6 +19,15 @@ Meteor.publish('processes', function() {
 });
 
 Meteor.publish('projectfiles', function() {
-	return Processes.find();
+	return ProjectFiles.find();
 });
+
+Meteor.publish('people', function() {
+	return People.find();
+});
+
+Meteor.publish('profilepics', function() {
+	return ProfilePics.find();
+});
+
 

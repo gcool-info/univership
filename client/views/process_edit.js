@@ -68,7 +68,7 @@ Template.processEdit.events({
 					return alert(error.reason);
 			});
 
-			//Router.go('project', {_id: this._id});
+			Router.go('project', {_id: this._id});
 		}
 	}
 })

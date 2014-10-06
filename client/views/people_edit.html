@@ -1,0 +1,63 @@
+<template name="peopleEdit">
+	<div class="bckg-full black-wavy" style="height:100%">
+		<h1>Editing {{personName}}</h1>
+		<form class="form" id="{{getID}}">
+			<div class="form-group">
+				<label class="control-label" for="name">Name</label>
+				<div class="controls">
+	                <input name="name" class="form-control input-lg" type="text" value="{{personName}}" placeholder="Name & surname"/>
+	            </div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="proffesion">Proffesion</label>
+				<div class="controls">
+	                <input name="proffesion" class="form-control input-lg" type="text" value="{{personProffesion}}" placeholder="teacher, chemist, coder, etc."/>
+	            </div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="body">Description</label>
+				<div class="controls">
+					 <textarea name="body" id="body" class="form-control" value="{{personDescription}}" rows="10"></textarea>
+	            </div>
+			</div>
+			<div class="photo-import">
+	            <div>Choose a photo</div> 
+	            <input type="file" name="file" id="add-photo">
+	            <div><img src="{{getPhoto}}" /></div>
+	        </div>
+			<div>_____________________________________________________________</div>
+			<h3>Projects</h3>
+			 {{> inputAutocomplete settings=settings id="projectAdd" class="input-xlarge" placeholder="Project"}}
+			 {{#each getProjects}}
+			 		<div><a href="/projects/{{this}}" target="_blank">{{this}}</a><i class="fa fa-times delete" id="{{this ..}}"></i></div>
+			 {{/each}}
+			<div>_____________________________________________________________</div>
+			<h3>contact</h3>
+			<div class="form-group">
+				<label class="control-label" for="email">Email</label>
+				<div class="controls">
+	                <input name="email" class="form-control input-lg" type="text" value="{{personEmail}}" placeholder="email address"/>
+	            </div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="twitter">Twitter</label>
+				<div class="controls">
+	                <input name="twitter" class="form-control input-lg" type="text" value="{{personTwitter}}" placeholder="twitter address"/>
+	            </div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="facebook">Facebook</label>
+				<div class="controls">
+	                <input name="facebook" class="form-control input-lg" type="text" value="{{personFacebook}}" placeholder="facebook address"/>
+	            </div>
+			</div>
+			<div>_____________________________________________________________</div>	   
+			<input class="btn btn-block btn-primary" type="button" id="save" value="Save"/>
+			<div>_____________________________________________________________</div>
+		</form>
+	</div>
+</template>
+
+<template name="projectTitle">
+	<span class="label">{{title}}</span>
+</template>
