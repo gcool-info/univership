@@ -1,0 +1,2 @@
+Template.amazingPeople.helpers({
+})
