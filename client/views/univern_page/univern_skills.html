@@ -1,38 +1,55 @@
 <template name="univernSkills">
-	<div class="bckg-full green-wavy">
+	<div class="bckg-full green-wavy univernSkills">
 		<h1>I WANT TO LEARN:</h1>
-		<table class="univernSkills">
-			<tr>
-				<td class="skill">
-					<img class="logo" src="/general_logos/user_centered_design.svg" />
-					<div class="text">User-centered<br/>design</div>
-					<div class="explanation">
-						
-					</div>
-				</td>
-				<td class="skill">
-					<img class="logo" src="/general_logos/physical_object_design.svg" />
-					<div class="text">Physical object<br/>design</div>
-				</td>
-				<td class="skill">
-					<img class="logo" src="/general_logos/entrepreneurship.svg" />
-					<div class="text">Entrepreneurship<br/>&nbsp;</div>
-				</td>
-			</tr>
-			<tr>
-				<td class="skill">
-					<img class="logo" src="/general_logos/coding.svg" />
-					<div class="text">Coding<br/>(electronics & web)</div>
-				</td>
-				<td class="skill">
-					><img class="logo" src="/general_logos/graphic_design.svg" />
-					<div class="text">Graphic<br/>design</div>
-				</td>
-				<td class="skill">
-					<img class="logo" src="/general_logos/communication.svg" />
-					<div class="text">Communication<br/>&nbsp;</div>
-				</td>
-			</tr>
-		</table>
+		<div class="explanation-block">
+			<div class="explanation-text" id="skill-1-text">
+				<h3>Skill @ {{getSkillPercentage 'user-centered-design'}}</h3>
+				<p>I want to understand the thought & work process for discovering the needs, wants, and limitations of end users.</p>
+			</div>
+			<div class="explanation-text" id="skill-2-text">
+				<h3>Skill @ {{getSkillPercentage 'physical-object-design'}}</h3>
+				<p>I want to create objects, whether that be using new technologies (<i>3D printers, laser cutters, etc</i>) or old ones!</p>
+			</div>
+			<div class="explanation-text" id="skill-3-text">
+				<h3>Skill @ {{getSkillPercentage 'entrepreneurship'}}</h3>
+				<p>How do you successfully start & run a company during its first years of existance?</p>
+			</div>
+			<div class="explanation-text" id="skill-4-text">
+				<h3>Skill @ {{getSkillPercentage 'coding'}}</h3>
+				<p>Web (<i>mostly .js</i>), electronics (<i>PIC's, arduino's, raspberry Pi's, ...</i>) or both (<i>Internet of Things</i>)!</p>
+			</div>
+			<div class="explanation-text" id="skill-5-text">
+				<h3>Skill @ {{getSkillPercentage 'graphic-design'}}</h3>
+				<p>How can you visually communicate a complicated message or emotion? </p>
+			</div>
+			<div class="explanation-text" id="skill-6-text">
+				<h3>Skill @ {{getSkillPercentage 'communication'}}</h3>
+				<p>How can you create an online community? How do you use social media effectively?</p>
+			</div>
+		</div>
+		<div class="skill" id="skill-1">
+			<img class="logo" src="/general_logos/user_centered_design.svg" />
+			<div class="text">User-centered design</div>		
+		</div>
+		<div class="skill" id="skill-2">
+			<img class="logo" src="/general_logos/physical_object_design.svg" />
+			<div class="text">Physical object design</div>
+		</div>
+		<div class="skill" id="skill-3">
+			<img class="logo" src="/general_logos/entrepreneurship.svg" />
+			<div class="text">Entrepreneurship</div>
+		</div>
+		<div class="skill" id="skill-4">
+			<img class="logo" src="/general_logos/coding.svg" />
+			<div class="text">Coding (electronics & web)</div>
+		</div>
+		<div class="skill" id="skill-5">
+			<img class="logo" src="/general_logos/graphic_design.svg" />
+			<div class="text">Graphic design</div>
+		</div>
+		<div class="skill" id="skill-6">
+			<img class="logo" src="/general_logos/communication.svg" />
+			<div class="text">Communication</div>
+		</div>
 	</div>
 </template>

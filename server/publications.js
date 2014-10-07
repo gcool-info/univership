@@ -1,5 +1,5 @@
-Meteor.publish('univerns', function() {
-	return Meteor.users.find();
+Meteor.publish('univerns', function(id) {
+	return Meteor.users.find(id);
 });
 
 Meteor.publish('projects', function() {
@@ -13,6 +13,15 @@ Meteor.publish('projectlogos', function() {
 Meteor.publish('skills', function() {
 	return Skills.find();
 });
+
+Meteor.publish('univernsSkills', function(univernID) {
+	return Skills.find({"univernID":univernID}, {fields: {percentage: true, title: true}});
+});
+
+Meteor.publish('univernsPeople', function(univernID) {
+	return People.find({"univernID":univernID, "public":true});
+});
+
 
 Meteor.publish('processes', function() {
 	return Processes.find();

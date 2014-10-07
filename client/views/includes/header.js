@@ -1,6 +1,9 @@
 Template.header.helpers({
-	george: function() {
-		return Meteor.users.findOne();
+	getGeorge: function() {
+		var george = Meteor.users.findOne();
+
+		if (george)
+			return george._id;
 	}
 });
 
@@ -42,40 +45,41 @@ Template.header.rendered = function() {
 	}
 
 	$("body").click(function(e){
-		e.stopPropagation();
 		headerAnimation();
 	});
 
 	$(".header").mouseenter(function(e){
-		e.stopPropagation();
+		e.preventDefault();
 		clearTimeout(t);
 	});
 
 	$(".header").mouseleave(function(e){
-		e.stopPropagation();
+		e.preventDefault();
 		t = setTimeout(hideHeader, interval);
 	});
 
 	$(".trigger-header").mouseenter(function(e){
-		e.stopPropagation();
+		e.preventDefault();
 		headerAnimation();
 	});
 },
 
 Template.header.events({
 	'click .header': function(e) {
-		e.stopPropagation();
 		$(".header").stop();
 	},
 
 	'click .navbar': function(e) {
-		e.stopPropagation();
+		e.preventDefault();
 		var width = $(".phone-social-header").width();
 		var right = $(".phone-social-header").css('right');
 
-		if (right !== 0)
+
+		if (right !== 0) {
 			$(".phone-social-header").animate({right: 0},500);
-		else
+		}
+		else {
 			$(".phone-social-header").animate({right: -width},500);
+		}
 	}
  })

@@ -1,0 +1,11 @@
+<template name="amazingPeople">
+	<div class="bckg-full">
+		{{#each person}}
+				<div class="slide amazingPeople person-{{_id}}" id="person-{{_id}}">
+					{{name}}
+				</div>
+				{{setBackground}}
+				{{updateFullPageJS}}
+		{{/each}}
+	</div>
+</template>

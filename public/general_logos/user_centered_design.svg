@@ -7,10 +7,34 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="35"
    height="36.5"
-   id="svg8650">
+   id="svg8650"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="user_centered_design.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="841"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="4.5719781"
+     inkscape:cx="48.958264"
+     inkscape:cy="24.151902"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8650" />
   <defs
      id="defs8652" />
   <metadata
@@ -21,19 +45,10 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     transform="translate(0.30932203,-1074.6334)"
-     id="layer1"
-     style="fill:#242424">
-    <path
-       d="m 34.36359,1022.0285 -16.86354,-6.1663 -16.87715,6.1612 -0.6229,0.2269 0,0.9199 0,0.1875 0,22.6427 9.37508,3.3829 7.47677,2.6978 0.6482,0.234 0.6481,-0.234 16.85185,-6.0807 0,-22.5015 0,-0.3036 0,-0.9347 z m -17.51174,28.6809 -15.55555,-5.6127 0,-21.4579 11.08074,3.9978 4.47481,1.6149 z m 0.6482,-22.5963 -7.97034,-2.8756 -7.01548,-2.5321 14.98582,-5.4696 14.97222,5.4747 z m 16.20365,16.9836 -15.55555,5.6127 0,-21.4579 15.55555,-5.5902 z"
-       id="path3-52-9-2"
-       style="fill:#242424;fill-opacity:1;display:inline" />
-  </g>
   <g
      transform="matrix(0.3895051,0,0,0.3895051,-472.28784,1183.9484)"
      id="g10476"
