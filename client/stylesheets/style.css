@@ -450,6 +450,65 @@ hr:after {
 	background-size: cover;
 }
 
+.amazingPeople .fp-tableCell {
+	vertical-align: top;
+}
+
+.amazingPeople .title {
+	margin-left: 5%;
+}
+
+.amazingPeople .title h3 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.amazingPeople .title hr {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.amazingPeople .title .name {
+	margin-left: 5%;
+	text-transform: uppercase;
+}
+
+.amazingPeople .title .profession {
+	font-weight: 400;
+}
+
+.amazingPeople .description {
+	font-weight: 400;
+	margin-left: 10%;
+	font-size: 1.2em;
+	width: 40%;
+	float: left;
+}
+
+.amazingPeople .links {
+	float: right;
+	width: 40%;
+}
+
+.amazingPeople .links .bar {
+	width: 80%;
+	background-color: rgba(90,138,226,0.6);
+	font-weight: 700; 
+	font-size: 1.5em;
+	padding-left: 0.5em;
+}
+
+.amazingPeople .links .icons {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	font-size: 1.7em;
+	padding-left: 0.5em;
+}
+
+.amazingPeople .links .icons .icon{
+	margin-right: 1em;
+}
+
 /* Smartphones (portrait or landscape) ----------- */
 @media screen and (max-device-width: 640px){
 	body {

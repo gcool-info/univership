@@ -15,7 +15,11 @@ Meteor.publish('skills', function() {
 });
 
 Meteor.publish('univernsSkills', function(univernID) {
-	return Skills.find({"univernID":univernID}, {fields: {percentage: true, title: true}});
+	return Skills.find({"univernID":univernID}, {fields: {percentage: true, title: true, projectID:true}});
+});
+
+Meteor.publish('univernsProjects', function(univernID) {
+	return Projects.find({"univernID":univernID}, {fields: {title: true, body: true, logo: true}});
 });
 
 Meteor.publish('univernsPeople', function(univernID) {
