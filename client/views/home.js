@@ -1,7 +1,10 @@
 Template.home.rendered = function() {
+
 	$('.home').fullpage();
 
-	$('.header .menu-link').click(function() {
-		$.fn.fullpage.destroy('all');
+
+	/* We have to distroy fullPageJS to reconstruct it in another page */
+	$('.header .menu-link').click(function(e) {
+	    	$.fn.fullpage.destroy('all');		
 	});
 }

@@ -400,6 +400,7 @@ hr:after {
 	margin-bottom: 5%;
 	float: left;
 	cursor: pointer;
+	text-align: center;
 }
 
 
@@ -408,7 +409,7 @@ hr:after {
 	height: 60%;
 	width: 100%;
 	margin-right: auto;
-	margin-right: auto;
+	margin-left: auto;
 }
 
 .univernSkills .text {
@@ -588,6 +589,20 @@ hr:after {
 		margin-top: 0;
 	}
 
+	.fp-controlArrow {
+		margin-top: 0;
+	}
+
+	.fp-controlArrow.fp-prev {
+		border-width: 3em;
+		left:0;
+	}
+
+	.fp-controlArrow.fp-next {
+		border-width: 3em;
+		right: 0;
+	}
+
 	.baseline {
 		padding-right: 10%;
 		font-size: 2.5em;
@@ -623,6 +638,54 @@ hr:after {
 	.bckg-half .baseline {
 		font-size: 3.3em;
 	}
+
+	.univernIntroduction h2 {
+		font-size: 2.7em;
+		margin-top: 10vh;
+	}
+
+	.univernIntroduction .logo {
+		width: 100%;
+	}
+
+	.univernIntroduction .logo img {
+		width: 40%;
+	}
+
+	.univernSkills .skill {
+		width: 40%;
+		height: 25%;
+	}
+
+	.univernSkills .logo {
+		width: 50%;
+	}
+
+	.univernSkills .text {
+		font-size: 2em;
+	}
+
+	.univernSkills .explanation-block {
+		width: 45%;
+		height: 28%;
+	}
+
+	.univernSkills .explanation-text {
+		font-size: 1.6em;
+	}
+
+	.amazingPeople .description {
+		font-size: 2em;
+	}
+
+	.bar {
+		font-size: 2em;
+	}
+
+	.amazingPeople .links .icons {
+		font-size: 2.5em;
+		width: 80%;
+	}
 }
 
 /* Smartphones (portrait) ----------- */
@@ -657,10 +720,42 @@ hr:after {
 	.phone-social-header.social.icons {
 		display: inline;
 	}
+
+	.amazingPeople .description {
+		font-size: 2em;
+		width: 70%;
+		margin-left: 15%;
+		float: none;
+	}
+
+	.amazingPeople h1 {
+		font-size: 2.5em;
+	}
+
+	.amazingPeople .links {
+		width: 80%;
+		margin-left: 15%;
+		float: none;
+		margin-top: 10%;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
 @media screen and (max-device-width: 640px) and (orientation: landscape){
+	.header {
+		height: 10vh;
+	}
+
+	.menu-title {
+		font-size: 3vh;
+		margin-top: 2.5vh;
+	}
+
+	.social .fa {
+		font-size: 5vh;
+		margin-top: 2.1vh;
+	}
+
 	.play-video {
 		top: 40%;
 		left: 40%;
@@ -668,6 +763,18 @@ hr:after {
 
 	.short-description-home {
 		width: 30%;
+		margin-top: 0;
+	}
+
+	.univernSkills .skill {
+		margin-bottom: 0;
+	}
+
+	.univernSkills .explanation-text {
+		margin: 2%;
+	}
+
+	.univernSkills .explanation-text p {
 		margin-top: 0;
 	}
 }

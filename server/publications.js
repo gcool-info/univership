@@ -1,3 +1,7 @@
+Meteor.publish('allUniverns', function() {
+	return Meteor.users.find();
+});
+
 Meteor.publish('univerns', function(id) {
 	return Meteor.users.find(id);
 });

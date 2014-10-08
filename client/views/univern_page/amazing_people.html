@@ -1,7 +1,7 @@
 <template name="amazingPeople">
 	<div class="bckg-full">
 		{{#each person}}
-				<div class="slide amazingPeople person-{{_id}}" id="person-{{_id}}">
+				<div class="slide amazingPeople person-{{_id}}" style="{{setBackground}}" id="person-{{_id}}">
 					<h1>I work with amazing people</h1>
 					<div class="title">
 						<h3><span class="name">{{name}}</span>, <span class="profession">{{proffesion}}</span></h3>
@@ -45,7 +45,6 @@
 						</div>
 					</div>
 				</div>
-				{{setBackground}}
 				{{restartFullPageJS}}
 		{{/each}}
 	</div>

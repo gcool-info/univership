@@ -1,6 +1,6 @@
 Template.header.helpers({
 	getGeorge: function() {
-		var george = Meteor.users.findOne();
+		var george = Meteor.users.findOne({"emails.0.address":"george.koulouris1@gmail.com"});
 
 		if (george)
 			return george._id;
@@ -17,7 +17,7 @@ Template.header.rendered = function() {
 		if (showHeader) {
 			clearTimeout(t);
 			var height = $(".header").height();
-			var width = $(".phone-social-header").width();
+			var width = $(".phone-social-header").width() + 100;
 			$(".header").animate({top: -height},500);
 			$(".phone-social-header").animate({right: -width},500);
 			showHeader = false;
@@ -31,7 +31,7 @@ Template.header.rendered = function() {
 
 	function hideHeader() {
 		var height = $(".header").height();
-		var width = $(".phone-social-header").width();
+		var width = $(".phone-social-header").width() + 100;
 
 		$(".header").animate({top: -height},500);
 		$(".phone-social-header").animate({right: -width},500);
@@ -70,10 +70,9 @@ Template.header.events({
 	},
 
 	'click .navbar': function(e) {
-		e.preventDefault();
+		//e.stopPropagation();
 		var width = $(".phone-social-header").width();
 		var right = $(".phone-social-header").css('right');
-
 
 		if (right !== 0) {
 			$(".phone-social-header").animate({right: 0},500);

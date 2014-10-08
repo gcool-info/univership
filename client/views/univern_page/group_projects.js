@@ -3,7 +3,10 @@ Template.groupProjects.helpers({
 		return Projects.find({"type":"group"});
 	},
 	getProjectLogo: function() {
-		return projectLogos.findOne(this.logo).url();
+		var projectLogo = projectLogos.findOne(this.logo);
+
+		if (projectLogo)
+			return projectLogo.url();
 	},
 	getSkills:function() {
 		var skills = Skills.find({"projectID":this._id});
@@ -22,7 +25,10 @@ Template.placements.helpers({
 		return Projects.find({"type":"placement"});
 	},
 	getProjectLogo: function() {
-		return projectLogos.findOne(this.logo).url();
+		var projectLogo = projectLogos.findOne(this.logo);
+
+		if (projectLogo)
+			return projectLogo.url();
 	},
 	getSkills:function() {
 		var skills = Skills.find({"projectID":this._id});
@@ -41,7 +47,10 @@ Template.individualProjects.helpers({
 		return Projects.find({"type":"individual"});
 	},
 	getProjectLogo: function() {
-		return projectLogos.findOne(this.logo).url();
+		var projectLogo = projectLogos.findOne(this.logo);
+
+		if (projectLogo)
+			return projectLogo.url();
 	},
 	getSkills:function() {
 		var skills = Skills.find({"projectID":this._id});
@@ -53,4 +62,5 @@ Template.individualProjects.helpers({
 	getSkillLogo:function(){
 		return '/general_logos/' + this.title + '.svg';
 	}
-})
+});
+

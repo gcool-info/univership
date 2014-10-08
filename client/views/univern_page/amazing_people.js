@@ -15,8 +15,8 @@ Template.amazingPeople.helpers({
 	setBackground : function() {
 		var amazingPhoto = ProfilePics.findOne(this.photo);
 
-		if (amazingPhoto)
-			$('.person-' + this._id).css('background', 'url(' + amazingPhoto.url() + ') no-repeat center center fixed');
+		if (amazingPhoto) 
+			return 'background: url(' + amazingPhoto.url() + ') no-repeat center center fixed';
 	},
 	getProjects:function() {
 		return this.projectID;
@@ -28,12 +28,14 @@ Template.amazingPeople.helpers({
 			var logo = projectLogos.findOne(project.logo);
 
 			if (logo)
+				Session.set("updated", new Date());
 				return logo.url();
 		}
 	},
 	getSkills:function(){
 		var skills = Skills.find({"projectID":String(this)});
 		if (skills) {
+			Session.set("updated", new Date());
 			return skills;
 		}
 	},
@@ -44,12 +46,14 @@ Template.amazingPeople.helpers({
 		
 		return true;
 	},
-	restartFullPageJS:function() {
-		/* Here, we restart the plugin FullPageJs because elements have been added to the dom reactively*/
+	restartFullPageJS: function() {
 		$.fn.fullpage.destroy('all');
 		$('.univernPage').fullpage();
+
+		return Session.get('updated');
 	}
-})
+});
+
 
 Template.amazingPeople.events({
 
