@@ -388,6 +388,7 @@ hr:after {
 	width: 60%;
 	font-weight: 400;
 	margin-top: 20vh;
+	text-align: justify;
 }
 
 .univernIntroduction .logo {
@@ -582,10 +583,33 @@ hr:after {
 	width: 100%;
 	margin-top: 20vh;
 }
+
 .univernContact .social.icons .fa {
 	font-size: 8em;
 	padding-left: 0
 	padding-right: 1em;
+}
+
+.helpdesk h1 {
+	margin-bottom: 1em;
+}
+
+.helpdesk .logo {
+	width: 30%;
+	height: 80%;
+	float: left;
+	margin-left: 5%;
+	text-align: center;
+}
+
+.helpdesk .logo img {
+	width: 60%;
+}
+
+.helpdesk .description {
+	font-size: 1.5em;
+	width: 80%;
+	font-weight: 400;
 }
 
 /* Smartphones (portrait or landscape) ----------- */
@@ -657,6 +681,7 @@ hr:after {
 	.univernIntroduction h2 {
 		font-size: 2.7em;
 		margin-top: 10vh;
+		text-align: left;
 	}
 
 	.univernIntroduction .logo {
@@ -792,6 +817,25 @@ hr:after {
 	.projects .info .title {
 		margin-top: 1em;
 	}
+
+
+	.univernContact .social {
+		width: 10%;
+		text-align: center;
+		margin: 1em auto 0 auto;;
+
+	}
+
+	.univernContact .social.icons {
+		display: block;
+	}
+
+	.univernContact .social.icons .fa {
+		margin-bottom: 2em;
+		padding: 0;
+		margin-left: 0;
+	}
+
 }
 
 /* Smartphones (landscape) ----------- */
