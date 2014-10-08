@@ -80,5 +80,9 @@ Template.header.events({
 		else {
 			$(".phone-social-header").animate({right: -width},500);
 		}
+	},
+	'click .header .menu-link':function() {
+		/* We have to distroy fullPageJS to reconstruct it in another page */
+		$.fn.fullpage.destroy('all');
 	}
  })

@@ -1,9 +1,3 @@
-Template.amazingPeople.rendered= function() {
-	$('.header .menu-link').click(function(e) {
-			$.fn.fullpage.destroy('all');
-	});
-}
-
 Template.amazingPeople.helpers({
 	person : function() {
 		var person = People.find();
@@ -16,7 +10,7 @@ Template.amazingPeople.helpers({
 		var amazingPhoto = ProfilePics.findOne(this.photo);
 
 		if (amazingPhoto) 
-			return 'background: url(' + amazingPhoto.url() + ') no-repeat center center fixed';
+			return 'background: url(' + amazingPhoto.url() + ') no-repeat center center fixed; background-size: cover;';
 	},
 	getProjects:function() {
 		return this.projectID;
@@ -27,9 +21,10 @@ Template.amazingPeople.helpers({
 		if (project) {
 			var logo = projectLogos.findOne(project.logo);
 
-			if (logo)
+			if (logo) {
 				Session.set("updated", new Date());
 				return logo.url();
+			}
 		}
 	},
 	getSkills:function(){
@@ -53,8 +48,3 @@ Template.amazingPeople.helpers({
 		return Session.get('updated');
 	}
 });
-
-
-Template.amazingPeople.events({
-
-})
