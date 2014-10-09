@@ -19,5 +19,11 @@ Template.projectIntro.helpers({
 
 		if (logo)
 			return logo.url();
-	}
+	},
+	setBackground : function() {
+		var amazingPhoto = projectLogos.findOne(this.image);
+
+		if (amazingPhoto) 
+			return 'background: url(' + amazingPhoto.url() + ') no-repeat center center fixed; background-size: cover;';
+	},
 })

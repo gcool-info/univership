@@ -627,6 +627,7 @@ hr:after {
 
 .splash-screen.project-intro .baseline {
 	padding-left: 0;
+	font-weight: 400;
 }
 
 .splash-screen.project-intro .splash-screen.logo img {
