@@ -4,13 +4,15 @@
 		{{#each getGroupProjects}}
 			<div class="slide">
 				<div class='logo'>
-					<img src="{{getProjectLogo}}" />
+					<a href="{{pathFor 'projectPage' this._id}}" class="actionBtn"><img src="{{getProjectLogo}}" /></a>
 				</div>
-				<div class="info">
-					<h1 class="title">{{this.title}}</h1>
-					<hr/>
-					<div class="description">{{{this.body}}}</div>
-				</div>
+				<a href="{{pathFor 'projectPage' this._id}}" class="actionBtn">
+					<div class="info">
+						<h1 class="title">{{this.title}}</h1>
+						<hr/>
+						<div class="description">{{{this.body}}}</div>
+					</div>
+				</a>
 				<div class="skills">
 					<div class="bar">SKILLS</div>
 					<div class="icons">
@@ -30,13 +32,15 @@
 		{{#each getPlacements}}
 			<div class="slide">
 				<div class='logo'>
-					<img src="{{getProjectLogo}}" />
+					<a href="{{pathFor 'projectPage' this._id}}" class="actionBtn"><img src="{{getProjectLogo}}" /></a>
 				</div>
-				<div class="info">
-					<h1 class="title">{{this.title}}</h1>
-					<hr/>
-					<div class="description">{{{this.body}}}</div>
-				</div>
+				<a href="{{pathFor 'projectPage' this._id}}" class="actionBtn">
+					<div class="info">
+						<h1 class="title">{{this.title}}</h1>
+						<hr/>
+						<div class="description">{{{this.body}}}</div>
+					</div>
+				</a>
 				<div class="skills">
 					<div class="bar">SKILLS</div>
 					<div class="icons">
@@ -57,13 +61,15 @@
 		{{#each individualProjects}}
 			<div class="slide">
 				<div class='logo'>
-					<img src="{{getProjectLogo}}" />
+					<a href="{{pathFor 'projectPage' this._id}}" class="actionBtn"><img src="{{getProjectLogo}}" /></a>
 				</div>
-				<div class="info">
-					<h1 class="title">{{this.title}}</h1>
-					<hr/>
-					<div class="description">{{{this.body}}}</div>
-				</div>
+				<a href="{{pathFor 'projectPage' this._id}}" class="actionBtn">
+					<div class="info">
+						<h1 class="title">{{this.title}}</h1>
+						<hr/>
+						<div class="description">{{{this.body}}}</div>
+					</div>
+				</a>
 				<div class="skills">
 					<div class="bar">SKILLS</div>
 					<div class="icons">

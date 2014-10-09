@@ -9,7 +9,7 @@
 	            </div>
 			</div>
 			<div class="form-group">
-				<label class="control-label" for="project-body">Project name</label>
+				<label class="control-label" for="project-body">Project Description</label>
 				<div class="controls">
 	               <textarea name="project-body" id="project-body" class="form-control" value="{{getProjectBody}}" rows="7"></textarea>
 	            </div>
@@ -20,6 +20,13 @@
 	        </div>
 			<div class="project-logo">
 				<img src="{{getLogo}}" />
+			</div>
+			<div class="image-import">
+	            <div>Choose the project's image:</div> 
+	            <input type="file" name="file" id="add-image">
+	        </div>
+	        <div class="project-image">
+				<img src="{{getImage}}" />
 			</div>
 			 <div class="form-group">
 	            <label for="project-type">Project Type</label>

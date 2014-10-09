@@ -30,8 +30,12 @@ Template.projectEdit.helpers({
 
         if (projectLogo !== undefined)
           return projectLogo.url();
-        else
-            return '';
+	},
+	getImage: function() {
+		var projectImage = projectLogos.findOne(this.image);
+
+		if (projectImage !== undefined)
+          return projectImage.url();
 	},
 	getIntroVideo: function() {
 		return this.introVideo;
@@ -87,6 +91,24 @@ Template.projectEdit.events({
 		project.handleID = handle._id;
 
 		Meteor.call('setProjectLogo', project, function(error, id) {
+			if (error)
+				return alert(error.reason);
+		});
+    }, 
+    'change #add-image': function(e) {
+		e.preventDefault();
+
+		var project = {
+			id: this._id,
+			previousImage: this.image,
+			owner: this.univernID,
+		}
+
+		var handle = projectLogos.insert(e.target.files[0], function (err, fileObj) {});
+
+		project.handleID = handle._id;
+
+		Meteor.call('setProjectImage', project, function(error, id) {
 			if (error)
 				return alert(error.reason);
 		});

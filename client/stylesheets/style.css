@@ -612,6 +612,41 @@ hr:after {
 	font-weight: 400;
 }
 
+.splash-screen.project-intro {
+	padding-top: 10vh;
+}
+
+.splash-screen.project-intro .fa {
+	color: rgb(201,0,0);
+}
+
+.splash-screen.project-intro .fa:hover {
+	color: #fffff1;
+	cursor: pointer;
+}
+
+.splash-screen.project-intro .baseline {
+	padding-left: 0;
+}
+
+.splash-screen.project-intro .splash-screen.logo img {
+	height: 100%;
+}
+
+.splash-screen.project-intro .splash-screen.logo-letters {
+	padding-left: 0;
+}
+
+.splash-screen.project-intro .splash-screen.logo-letters h1 {
+	margin-bottom: 0;
+	margin-left: 0;
+	font-size: 5em;
+}
+
+.project-image img {
+	width: 200px;
+}
+
 /* Smartphones (portrait or landscape) ----------- */
 @media screen and (max-device-width: 640px){
 	body {
