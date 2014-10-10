@@ -1,0 +1,30 @@
+<template name="projectProcess">
+	<div class="bckg-full {{getProjectType}}-wavy project-processes">
+	<h1>Wow! But how?</h1>
+	{{#each getProcesses}}
+		<div class="slide">
+			<h2>{{getTitle}}</h2>
+			<hr/>
+			<h3>{{getBody}}</h3>
+			<div class="links">
+				{{#if hasLink 'file'}}
+					<a href="{{getLink 'file'}}" target="_blank"><i class="fa fa-file"></i></a>
+				{{/if}}
+				{{#if hasLink 'folder'}}
+					<a href="{{getLink 'folder'}}" target="_blank"><i class="fa fa-folder-open"></i></a>
+				{{/if}}
+				{{#if hasLink 'github'}}
+					<a href="{{getLink 'github'}}" target="_blank"><i class="fa fa-github"></i></a>
+				{{/if}}
+				{{#if hasLink 'video'}}
+					<a href="{{getLink 'video'}}" target="_blank"><i class="fa fa-youtube-play"></i></a>
+				{{/if}}
+				{{#if hasLink 'instructables'}}
+					<a href="{{getLink 'instructables'}}" target="_blank"><i class="fa fa-cogs"></i></a>
+				{{/if}}
+			</div>
+		</div>
+	{{/each}}
+	</div>
+	{{restartFullPageJS}}
+</template>

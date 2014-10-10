@@ -3,7 +3,6 @@ Template.projectSkills.rendered = function() {
 	/* For some reason events don't fire when I put them in the .events section */
 	$(".skill").click( function(e) { 
 		e.preventDefault();
-		console.log('okj');
 		var blockNum = $(e.target).parent().attr('id').split('-')[1];
 		var blockPosition = $(e.target).parent().position();
 
@@ -33,3 +32,7 @@ Template.projectSkills.helpers({
 		return Math.round(this.percentage*100) + '%';
 	}
 });
+
+Template.projectSkills.events({
+
+})

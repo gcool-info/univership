@@ -43,11 +43,11 @@ Meteor.methods({
       	if (user._id !== project.univernID)
           throw new Meteor.Error(401, "Bad Univern! This is not your project!");
 
-      	var step = _.extend(_.pick(stepAttributes, 'rank', 'title', 'body', 'files'), {
+      	var step = _.extend(_.pick(stepAttributes, 'title', 'body', 'files'), {
 			created: new Date().getTime()
 		});
 
-		Processes.update({_id: stepAttributes.id, "projectID": project._id}, {$set: step});
+		Processes.update({"rank": stepAttributes.rank, "projectID": project._id}, {$set: step});
 
 	},
 

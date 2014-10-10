@@ -46,16 +46,18 @@ Template.processEdit.events({
 
 			var file = $("#processes-form").find('[name=file-'+ rank +']')[0].files[0];
 
-			var handle = projectFiles.insert(file, function (err, fileObj) {});
+			if (file)
+				var handle = projectFiles.insert(file, function (err, fileObj) {});
+			else 
+				var handle = null;
 
 			var processStep = {
-				id: $(".form-group").attr('id'), 
 				projectID: this._id,
 				title: $("#processes-form").find('[name=title-'+ rank +']').val(), 
 				body: $("#processes-form").find('[name=body-'+ rank +']').val(), 
 				rank: rank,
 				files: {
-					file: handle._id,
+					file: (handle ? handle._id : ''),
 					folder: $("#processes-form").find('[name=folder-'+ rank +']').val(), 
 					video: $("#processes-form").find('[name=video-'+ rank +']').val(), 
 					github: $("#processes-form").find('[name=github-'+ rank +']').val(), 
@@ -63,12 +65,12 @@ Template.processEdit.events({
 				}
 			}
 
+			console.log(handle);
+
 			Meteor.call('saveStep', processStep, function(error, id) {
 				if (error)
 					return alert(error.reason);
 			});
-
-			Router.go('project', {_id: this._id});
 		}
 	}
 })

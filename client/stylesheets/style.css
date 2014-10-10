@@ -167,7 +167,7 @@ hr:after {
 }
 
 .bckg-full.video {
-	background: url(/people_photos/george_koulouris.png) no-repeat center center fixed; 
+	background: url(/people_photos/george_koulouris.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -249,6 +249,9 @@ hr:after {
 	width: 100%;
 }
 
+.bckg-half {
+	border-bottom: 1px solid #fffff1;
+}
 
 .bckg-half .baseline {
 	font-size: 4em;
@@ -256,7 +259,6 @@ hr:after {
 	width: 70%;
 	padding-top: 6vh;
 	color: #242424;
-	border-bottom: 1px solid #fffff1;
 }
 
 .short-description-home {
@@ -712,6 +714,59 @@ hr:after {
 	font-size: 4em;
 }
 
+.project-processes .fp-tableCell {
+	vertical-align: top;
+}
+
+.project-processes h1 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.project-processes h2 {
+	font-weight: 300;
+	font-size: 3em;
+	color: #242424;
+	text-align: center;
+}
+
+.project-processes h3 {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 400;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.project-processes hr {
+	font-size: 2em;
+	padding: 0;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.project-processes .links {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 2.5em;
+	margin-top: 1em;
+}
+
+.project-processes .links .fa {
+	margin-right: 1em;
+}
+
+.project-processes .links .fa:hover {
+	color: #242424;
+}
+
+
 /* Smartphones (portrait or landscape) ----------- */
 @media screen and (max-device-width: 640px){
 	body {
@@ -953,6 +1008,26 @@ hr:after {
 		margin-left: 0;
 	}
 
+	.project-processes h2 {
+		width: 80%;
+	}
+
+	.project-processes h3 {
+		width: 50%;
+		margin-left: 15%;
+		font-size: 2.5em;
+	}
+
+	.project-processes .links {
+		width: 5%;
+		font-size: 4em;
+		margin-top: 2em;
+		margin-left: 35%;
+	}
+
+	.project-processes .links .fa {
+		margin-bottom: 2em;
+	}
 }
 
 /* Smartphones (landscape) ----------- */

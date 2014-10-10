@@ -35,13 +35,14 @@ Meteor.publish('univernsPeople', function(univernID) {
 });
 
 
-Meteor.publish('processes', function() {
-	return Processes.find();
+Meteor.publish('processes', function(projectID) {
+	return Processes.find({"projectID": projectID}, {sort:{"rank": 1}});
 });
 
 Meteor.publish('projectfiles', function() {
-	return ProjectFiles.find();
+	return projectFiles.find();
 });
+
 
 Meteor.publish('people', function() {
 	return People.find();
