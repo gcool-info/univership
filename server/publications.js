@@ -18,6 +18,10 @@ Meteor.publish('skills', function() {
 	return Skills.find();
 });
 
+Meteor.publish('projectSkills', function(projectID) {
+	return Skills.find({"projectID": projectID});
+});
+
 Meteor.publish('univernsSkills', function(univernID) {
 	return Skills.find({"univernID":univernID}, {fields: {percentage: true, title: true, projectID:true}});
 });
