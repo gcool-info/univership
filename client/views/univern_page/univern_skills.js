@@ -50,7 +50,3 @@ Template.univernSkills.helpers({
 		return Math.round(skillPerc*100/totalSkillPerc) + '%';
 	}
 });
-
-Template.univernSkills.events({
-
-})

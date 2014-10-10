@@ -449,6 +449,10 @@ hr:after {
 	text-align: center;
 }
 
+.univernSkills .skill:hover {
+	opacity: 0.5;
+}
+
 
 .univernSkills .logo {
 	margin-top: 1em;
