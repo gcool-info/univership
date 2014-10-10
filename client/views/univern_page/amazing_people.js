@@ -9,8 +9,10 @@ Template.amazingPeople.helpers({
 	setBackground : function() {
 		var amazingPhoto = ProfilePics.findOne(this.photo);
 
-		if (amazingPhoto) 
+		if (amazingPhoto) {
+			Session.set("updated", new Date());
 			return 'background: url(' + amazingPhoto.url() + ') no-repeat center center fixed; background-size: cover;';
+		}
 	},
 	getProjects:function() {
 		return this.projectID;

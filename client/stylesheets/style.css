@@ -80,6 +80,30 @@ hr:after {
 	letter-spacing: 8px; /* Use letter-spacing to increase space between dots*/
 }
 
+.scroll-explanation {
+	position: absolute;
+	bottom: 10px;
+	left: 49%;
+}
+
+.scroll-explanation .text {
+	font-weight: 700;
+	opacity: 0;
+}
+
+.start-arrow.fa {
+	font-size: 3em;
+}
+
+.start-arrow.fa:hover {
+	color: #5A8AE2;
+	cursor: pointer;
+}
+
+.start-arrow.fa:hover + .text {
+	opacity: 1;
+}
+
 .header {
 	height: 6vh;
 	width: 100%;
@@ -177,27 +201,40 @@ hr:after {
 	background-image: url(/general_logos/bckg_wavy_red.png);
 }
 
+.grey-wavy {
+	background-image: url(/general_logos/bckg_wavy_grey.png);
+}
+
 .splash-screen {
-	table-layout: fixed;
+	text-align: center;
 }
 
-.splash-screen.logo {
-	width: 30%;
-	text-align: right;
-	vertical-align: bottom
-}
-
-.splash-screen.logo.container {
-	padding-top: 10vh;
-	width: 60%;
+.splash-screen hr {
+	padding-left: 0;
+	font-size: 2em;
+	margin-bottom: 2em;
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 4em;
 }
 
-.splash-screen.logo-letters {
-	padding-left: 5%;
-	vertical-align: bottom
+.splash-screen .baseline {
+	font-size: 2em;
+	padding: 0;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.splash-screen .logo {
+	width: 100%;
+	padding-top: 10vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.splash-screen .logo img {
+	width: 30%;
 }
 
 .bckg-half .logo {
@@ -218,6 +255,8 @@ hr:after {
 	margin: 0;
 	width: 70%;
 	padding-top: 6vh;
+	color: #242424;
+	border-bottom: 1px solid #fffff1;
 }
 
 .short-description-home {
@@ -270,12 +309,11 @@ hr:after {
 }
 
 .logo-section {
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .explanation .logo-section {
-	text-align: center;
-	width: 50%;
+	width: 55%;
 	padding-left: 10%;
 }
 
@@ -286,11 +324,11 @@ hr:after {
 }
 
 .explanation .logo-section .top {
-	width: 55%;
+	width: 100%;
 }
 
 .explanation .logo-section .middle {
-	width: 80%;
+	width: 100%;
 }
 
 .explanation .logo-section .bottom {
@@ -303,7 +341,7 @@ hr:after {
 
 .explanation .body {
 	width: 70%;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .explanation hr {
@@ -345,7 +383,7 @@ hr:after {
 }
 
 .menu-title {
-	font-size: 2vh;
+	font-size: 1.9vh;
 	margin-top: 1.5vh;
 	padding-left: 2em;
 	float: left;
@@ -380,6 +418,7 @@ hr:after {
 	padding: 6vh 0 0 0;
 	margin: 0;
 	width: 100%;
+	color: #242424;
 }
 
 .univernIntroduction h2 {
@@ -389,10 +428,15 @@ hr:after {
 	font-weight: 400;
 	margin-top: 20vh;
 	text-align: justify;
+	color: #242424;
 }
 
 .univernIntroduction .logo {
 	text-align: center;
+}
+
+.fp-controlArrow.fp-next {
+	border-color: transparent transparent transparent #242424;
 }
 
 .univernSkills .skill {
@@ -429,7 +473,7 @@ hr:after {
 	width: 25%;
 	height: 30%;
 	left: -500px;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.9);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -678,18 +722,10 @@ hr:after {
 		right: 0;
 	}
 
-	.baseline {
-		padding-right: 10%;
-		font-size: 2.5em;
+	.splash-screen .logo img {
+		width: 60%;
 	}
 
-	.splash-screen.logo .svg {
-		width: 80%;
-	}
-
-	.splash-screen.logo-letters .svg {
-		width: 80%;
-	}
 
 	.short-description-home {
 		width: 40%;
@@ -774,6 +810,10 @@ hr:after {
 	.projects .skills {
 		font-size: 1.5em;
 	}
+
+	.helpdesk .description {
+		font-size: 2.5em;
+	}
 }
 
 /* Smartphones (portrait) ----------- */
@@ -783,6 +823,27 @@ hr:after {
 		width: 30%;
 		margin-right: auto;
 		margin-left: auto;
+	}
+
+	.splash-screen {
+		width: 90%
+	}
+
+	.splash-screen .logo img {
+		width: 75%;
+	}
+
+	.splash-screen .baseline {
+		font-size: 3em;
+		width: 60%;
+	}
+
+	.splash-screen hr {
+		margin-top: 2em;
+	}
+
+	.scroll-explanation {
+		left: 40%;
 	}
 
 	.bckg-half .baseline {
@@ -840,7 +901,7 @@ hr:after {
 
 	.projects .info {
 		float: none;
-		width: 60%;
+		width: 80%;
 		margin-left: 15%;
 	}
 
@@ -911,6 +972,10 @@ hr:after {
 	.univernSkills .explanation-text p {
 		margin-top: 0;
 	}
+
+	.splash-screen .logo img {
+		width: 40%;
+	}
 }
 
 /*  Tablets Portrait or Landscape */
@@ -932,8 +997,6 @@ hr:after {
 	.explanation .body {
 		font-size: 1.3em;
 	}
-
-
 }
 
 /*  Tablets Landscape */
@@ -946,11 +1009,19 @@ hr:after {
 	.bckg-half .baseline {
 		width: 80%;
 	}
-
 }
 
 /*  Tablets Portrait */
 @media screen and (min-device-width: 768px) and (orientation: portrait){
+
+	.splash-screen .logo img {
+		width: 80%;
+	}
+
+	.splash-screen .baseline {
+		width: 60%;
+		font-size: 3em;
+	}
 
 	.bckg-half .logo {
 		float: none;
@@ -959,11 +1030,116 @@ hr:after {
 		margin-left: auto;
 	}
 
+	.univernSkills .skill {
+		width: 40%;
+		height: 25%;
+	}
+
+	.univernSkills .logo {
+		width: 50%;
+	}
+
+	.univernSkills .text {
+		font-size: 2em;
+	}
+
+	.univernSkills .explanation-block {
+		width: 45%;
+		height: 28%;
+	}
+
+	.univernSkills .explanation-text {
+		font-size: 1.6em;
+	}
+
 	.bckg-half .baseline {
 		padding-top: 0;
 		margin-right: auto;
 		margin-left: auto;
 		font-size: 3.3em;
 		text-align: center;
+	}
+
+	.explanation .body {
+		font-size: 2em;
+	}
+
+	.social.navbar {
+		display: inline;
+	}
+
+	.social.icons {
+		display: none;
+	}
+
+	.phone-social-header.social.icons {
+		display: inline;
+	}
+
+	.amazingPeople .description {
+		font-size: 2em;
+		width: 70%;
+		margin-left: 15%;
+		float: none;
+	}
+
+	.amazingPeople h1 {
+		font-size: 2.5em;
+	}
+
+	.amazingPeople .links {
+		width: 80%;
+		margin-left: 15%;
+		float: none;
+		margin-top: 10%;
+	}
+
+	.projects .logo {
+		width: 100%;
+		float: none;
+		margin: 0;
+		text-align: center;
+	}
+
+	.projects .logo img {
+		width: 50%;
+	}
+
+	.projects .info {
+		float: none;
+		width: 80%;
+		margin-left: 15%;
+	}
+
+	.projects .skills {
+		float: none;
+		width: 60%;
+		margin-left: 15%;
+	}
+
+	.projects .info .title {
+		margin-top: 1em;
+	}
+
+
+	.univernContact .social {
+		width: 10%;
+		text-align: center;
+		margin: 1em auto 0 auto;;
+
+	}
+
+	.univernContact .social.icons {
+		display: block;
+	}
+
+	.univernContact .social.icons .fa {
+		margin-bottom: 2em;
+		padding: 0;
+		margin-left: 0;
+	}
+
+	.helpdesk .description {
+		font-size: 2.5em;
 	}
 }

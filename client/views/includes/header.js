@@ -62,6 +62,7 @@ Template.header.rendered = function() {
 		e.preventDefault();
 		headerAnimation();
 	});
+
 },
 
 Template.header.events({
@@ -70,7 +71,7 @@ Template.header.events({
 	},
 
 	'click .navbar': function(e) {
-		//e.stopPropagation();
+		e.stopPropagation();
 		var width = $(".phone-social-header").width();
 		var right = $(".phone-social-header").css('right');
 
@@ -81,8 +82,21 @@ Template.header.events({
 			$(".phone-social-header").animate({right: -width},500);
 		}
 	},
-	'click .header .menu-link':function() {
-		/* We have to distroy fullPageJS to reconstruct it in another page */
-		$.fn.fullpage.destroy('all');
+	'click .header .menu-link':function(e) {
+		var currentURL = window.location.pathname;
+		var nextURL = $(e.target).attr('href');
+
+		/* Making sure we have checked all the links */
+		if (!nextURL) {
+			nextURL = $(e.target).parents().attr('href');
+		}
+
+		/* If the user clicks on the link of the same page, nothing should happen...! Otherwise, it will destroy fullpageJS */
+		if (currentURL == nextURL)
+			e.preventDefault();
+		else {
+			/* We have to distroy fullPageJS to reconstruct it in another page */
+			$.fn.fullpage.destroy('all');
+		}		
 	}
  })

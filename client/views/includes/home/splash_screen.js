@@ -1,5 +1,8 @@
-Template.projectIntro.helpers({
-	getLogo:function () {
-		console.log(this.logo);
-	}
-})
+Template.splashScreen.rendered = function() {
+
+	$(".start-arrow").click(function(e) {
+		$.fn.fullpage.moveSectionDown();
+	})
+
+	
+}
