@@ -18,6 +18,7 @@ Template.amazingPeople.helpers({
 		return this.projectID;
 	},
 	getProjectLogo: function() {
+		Session.set("updated", new Date());
 		var project = Projects.findOne({_id:String(this)});
 
 		if (project) {
@@ -32,11 +33,11 @@ Template.amazingPeople.helpers({
 	getSkills:function(){
 		var skills = Skills.find({"projectID":String(this)});
 		if (skills) {
-			Session.set("updated", new Date());
 			return skills;
 		}
 	},
 	getSkillLogo:function() {
+		Session.set("updated", new Date());
 		return '/general_logos/' + this.title + '.svg';
 	},
 	notAdded:function() {
@@ -45,7 +46,9 @@ Template.amazingPeople.helpers({
 	},
 	restartFullPageJS: function() {
 		$.fn.fullpage.destroy('all');
-		$('.univernPage').fullpage();
+
+		$('.univernPage').fullpage({
+		});
 
 		return Session.get('updated');
 	}

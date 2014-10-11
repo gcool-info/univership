@@ -34,6 +34,20 @@ h3 {
 	margin-bottom: 0;
 }
 
+h4 {
+	font-size: 1.3em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 1em; 
+	font-weight:400;
+	text-transform: uppercase;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
 a {
 	color: #fffff1;
 	text-decoration: none;
@@ -80,6 +94,14 @@ hr:after {
 	letter-spacing: 8px; /* Use letter-spacing to increase space between dots*/
 }
 
+.actionBtn:hover {
+	color: #242424;
+}
+
+.actionIcon:hover {
+	border: 1px solid #fffff1;
+}
+
 .scroll-explanation {
 	position: absolute;
 	bottom: 10px;
@@ -105,49 +127,40 @@ hr:after {
 }
 
 .header {
-	height: 6vh;
-	width: 100%;
-	background-color: #242424;
-	opacity: 0.8;
-	position: absolute;
-	top: 0;
+	position: fixed;
 	left: 0;
-	color: #fffff1;
-	z-index: 100;
+	height: 100%;
+	width: 30%;
+	background-color: rgba(24,24,24,0.9);
+	z-index: 1000;
 }
 
-.trigger-header {
-	opacity: 0;
-	height: 6vh;
-	width: 100%;
-	background-color:white; 
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 99;
+.first-univern {
+	display: none;
+}
+
+.header .trigger-header {
+	position: relative;
+	left: 105%;
+	top: 5%;
+	font-size: 2em;
+	color: #5A8AE2;
+}
+
+.header .trigger-header:hover {
+	color: rgb(230,122,117);
+	cursor: pointer;
+}
+
+.header a {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
 }
 
 .header .logo {
-	height: 100%;
-	float: left;	
-	margin-left: 1em;
-}
-
-.header .logo .svg {
-	height:90%;
-}
-
-.phone-social-header.social.icons {
-	display: none;
-	background-color: #242424;
-	position: absolute;
-	top: 6vh;
-	right: -500px;
-	z-index: 100;
-	margin: 0;
-	opacity: 0.8;
-	padding-right: 10%;
-	padding-bottom: 3%;
+	width: 50%;
 }
 
 .footer {
