@@ -35,13 +35,13 @@ h3 {
 }
 
 h4 {
-	font-size: 1.3em;
+	font-size: 1em;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
 h5 {
-	font-size: 1em; 
+	font-size: 0.8em; 
 	font-weight:400;
 	text-transform: uppercase;
 	margin-top: 0.4em;
@@ -130,7 +130,7 @@ hr:after {
 	position: fixed;
 	left: 0;
 	height: 100%;
-	width: 30%;
+	width: 15%;
 	background-color: rgba(24,24,24,0.9);
 	z-index: 1000;
 }
@@ -161,6 +161,10 @@ hr:after {
 
 .header .logo {
 	width: 50%;
+}
+
+.header .logo img {
+	width: 100%;
 }
 
 .footer {
@@ -962,6 +966,19 @@ hr:after {
 
 	.explanation .body {
 		font-size: 2em;
+	}
+
+	.header {
+		width: 40%;
+	}
+
+	h4 {
+		font-size: 1.5em;
+	}
+
+	h5 {
+		font-size: 1.2em;
+		margin-bottom: 1em;
 	}
 
 	.social.navbar {
