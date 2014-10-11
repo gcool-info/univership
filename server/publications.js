@@ -52,4 +52,9 @@ Meteor.publish('profilepics', function() {
 	return ProfilePics.find();
 });
 
+Meteor.publish('locations', function(univernID) {
+	return Locations.find({"univernID":univernID}, {sort:{created: -1}});
+});
+
+
 

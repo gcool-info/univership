@@ -626,6 +626,22 @@ hr:after {
 	margin-right: 2em;
 }
 
+.univernContact h1 {
+	text-align: center;
+	padding-left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+.univernContact h2 {
+	font-weight: 300;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 0;
+	text-transform: uppercase;
+}
+
 .univernContact .social {
 	float: none;
 	margin-left: auto;
@@ -765,6 +781,8 @@ hr:after {
 .project-processes .links .fa:hover {
 	color: #242424;
 }
+
+
 
 
 /* Smartphones (portrait or landscape) ----------- */
