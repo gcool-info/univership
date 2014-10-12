@@ -1,39 +1,39 @@
 <template name="header">
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
 	<div class="header" id="myMenu">
 		<div class="trigger-header">
 			<i class="fa fa-bars"></i>
 		</div>
-		<a href="{{pathFor 'home'}}" class="logo menu-link hide-submenu" id="logo">
+		<a href="{{pathFor 'home'}}" class="logo menu-link hide-submenu">
 			<img class="svg" src="/general_logos/logo.svg" alt="Univerhip, studies designed by you." />
 		</a>
-		<h4 id="definition" class="hide-submenu">
+		<h4 class="hide-submenu">
 			<a href="{{pathFor 'home'}}" class="menu-item">What is it?</a>
 		</h4>
-		<h4 id="introduction" data-menuanchor="introduction">
-			<a href="{{pathFor 'univernPage' _id=getGeorge hash='introduction'}}" class="menu-item">The first Univern</a>
+		<h4 class="show-submenu" id="introduction">
+			<a href="{{pathFor 'univernPage' _id=getGeorge}}" class="menu-item">The first Univern</a>
 		</h4>
 		<div class="first-univern">
-			<h5 id="skills" data-menuanchor="skills">
-				<a href="{{pathFor 'univernPage' _id=getGeorge hash='skills'}}" class="menu-item">Skills Chosen</a>
+			<h5 id="skills">
+				<a href="{{pathFor 'univernPage' _id=getGeorge}}" class="menu-item">Skills Chosen</a>
 			</h5>
-			<h5 id="people" data-menuanchor="people">
-				<a href="{{pathFor 'univernPage' _id=getGeorge hash='people'}}" class="menu-item">People Met</a>
+			<h5 id="people">
+				<a href="{{pathFor 'univernPage' _id=getGeorge}}" class="menu-item">People Met</a>
 			</h5>
-			<h5 id="group-projects" data-menuanchor="group-projects">
-				<a href="{{pathFor 'univernPage' _id=getGeorge hash='group-projects'}}" class="menu-item">Group Projects</a>
+			<h5 id="group-projects">
+				<a href="{{pathFor 'univernPage' _id=getGeorge}}" class="menu-item">Group Projects</a>
 			</h5>
-			<h5 id="placements" data-menuanchor="placements">
-				<a href="{{pathFor 'univernPage' _id=getGeorge hash='placements'}}" class="menu-item">Placements</a>
+			<h5 id="placements">
+				<a href="{{pathFor 'univernPage' _id=getGeorge}}" class="menu-item">Placements</a>
 			</h5>
-			<h5 id="individual-projects" data-menuanchor="individual-projects">
-				<a href="{{pathFor 'univernPage' _id=getGeorge hash='individual-projects'}}" class="menu-item">individual projects</a>
+			<h5 id="individual-projects">
+				<a href="{{pathFor 'univernPage' _id=getGeorge}}" class="menu-item">individual projects</a>
 			</h5>
-			<h5 id="work" data-menuanchor="work">
-				<a href="{{pathFor 'univernPage' _id=getGeorge hash='work'}}" class="menu-item">Wanna work together?</a>
+			<h5 id="work">
+				<a href="{{pathFor 'univernPage' _id=getGeorge}}" class="menu-item">Wanna work together?</a>
 			</h5>
 		</div>
-		<h4 id="join" class="hide-submenu">
+		<h4>
 			<a href="{{pathFor 'helpdesk'}}" class="menu-item">Join in!</a>
 		</h4>
 	</div>
