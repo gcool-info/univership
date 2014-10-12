@@ -2,6 +2,7 @@ Template.projectSkills.rendered = function() {
 	
 	/* For some reason events don't fire when I put them in the .events section */
 	$(".skill").click( function(e) { 
+		console.log('jquery');
 		e.preventDefault();
 		var blockNum = $(e.target).parent().attr('id').split('-')[1];
 		var blockPosition = $(e.target).parent().position();
@@ -25,14 +26,20 @@ Template.projectSkills.helpers({
 		return Skills.find();
 	},
 	getTitle: function(sectionTitle) {
-		if (this.title == sectionTitle)
+		if (this.title == sectionTitle) {
+			Session.set("updated", new Date());
 			return true;
+		}
 	},
 	getPercentage: function() {
 		return Math.round(this.percentage*100) + '%';
-	}
+	},
+	restartFullPageJS: function() {
+		$.fn.fullpage.destroy('all');
+		$('.project-page').fullpage();
+		return Session.get('updated');
+	},
 });
 
 Template.projectSkills.events({
-
 })

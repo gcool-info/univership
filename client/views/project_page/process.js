@@ -1,18 +1,4 @@
 Template.projectProcess.helpers({
-	getProjectType: function() {
-		switch (this.type) {
-			case 'group':
-				return 'green';
-				break;
-			case 'placement':
-				return 'blue';
-				break;
-			case 'individual':
-				return 'red';
-				break;	
-		}
-	},
-
 	getProcesses: function() {
 		return Processes.find();
 	},

@@ -1,3 +1,8 @@
+Template.header.rendered = function() {
+	// Hide the menu
+	$(".header").css('left', -$(".header").width());
+}
+
 Template.header.helpers({
 	getGeorge: function() {
 		var george = Meteor.users.findOne({"emails.0.address":"george.koulouris1@gmail.com"});
@@ -8,6 +13,10 @@ Template.header.helpers({
 });
 
 Template.header.events({
+	'click .menu-item':function() {
+		$(".trigger-header").animate({'left' : "105%"});
+		$(".header").animate({'left' : -$(".header").width() });
+	},
 	'click .show-submenu':function() {
 		$(".first-univern").show(400);
 	},
@@ -17,10 +26,14 @@ Template.header.events({
 	'click .trigger-header': function() {
 		var headerPos = $(".header").css('left');
 
-		if (headerPos == "0px")
+		if (headerPos == "0px") {
+			$(".trigger-header").animate({'left' : "105%"});
 			$(".header").animate({'left' : -$(".header").width() });
-		else 
+		}
+		else {
+			$(".trigger-header").animate({'left' : "80%"});
 			$(".header").animate({'left' : 0 });
+		}
 	},
 	'click #introduction': function() {
 		$.fn.fullpage.moveTo(1, 0);
@@ -45,5 +58,11 @@ Template.header.events({
 	},
 	'click #work': function() {
 		$.fn.fullpage.moveTo(7, 0);
+	},
+	'click #definition': function() {
+		$.fn.fullpage.moveTo(2, 0);
+	},
+	'click #home': function() {
+		$.fn.fullpage.moveTo(1, 0);
 	},
 })

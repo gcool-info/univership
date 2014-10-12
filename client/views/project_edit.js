@@ -14,7 +14,9 @@ Template.projectEdit.rendered = function() {
 
 			return skill;
 		}
-	}
+	},
+
+	$(".header").css("display", 'none');
 },
 
 Template.projectEdit.helpers({

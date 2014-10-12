@@ -1,14 +1,10 @@
 <template name="projectIntro">
-	<div class="bckg-full splash-screen project-intro" style="{{setBackground}}">
-		<div class="logo"><img class="svg" src="{{getLogo}}"/></div>
-		<div class="logo-letters">
-			<h1>{{this.title}}&nbsp;
-				<a href="{{this.introVideo}}" class="play">
-					<i class="fa fa-play-circle-o"></i>
-				</a>
-			</h1>
-		</div>
-		<hr />
-		<div class="baseline">{{this.body}}</div>
-	</div>			
+	<div class="logo"><img class="svg" src="{{getLogo}}"/></div>
+	<h1>{{this.title}}&nbsp;
+		<a href="{{this.introVideo}}" class="play">
+			<i class="fa fa-play-circle-o"></i>
+		</a>
+	</h1>
+	<hr />
+	<div class="baseline">{{this.body}}</div>		
 </template>

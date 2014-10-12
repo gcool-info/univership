@@ -1,4 +1,6 @@
 Template.processEdit.rendered = function() {
+	$(".header").css('display', 'none');
+	
 	getHighestRank = function(projectID) {
 		return Processes.find({"projectID": projectID}).count();
 	}

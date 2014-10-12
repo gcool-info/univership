@@ -1,5 +1,6 @@
 Template.layout.events({
-	'click .bckg-full': function() {
+	'click .section': function() {
+		$(".trigger-header").animate({'left' : "105%"});
 		$(".header").animate({'left' : -$(".header").width() });
 	}
 })

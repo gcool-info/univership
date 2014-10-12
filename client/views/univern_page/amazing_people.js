@@ -18,7 +18,6 @@ Template.amazingPeople.helpers({
 		return this.projectID;
 	},
 	getProjectLogo: function() {
-		Session.set("updated", new Date());
 		var project = Projects.findOne({_id:String(this)});
 
 		if (project) {
@@ -41,15 +40,11 @@ Template.amazingPeople.helpers({
 		return '/general_logos/' + this.title + '.svg';
 	},
 	notAdded:function() {
-		
 		return true;
 	},
 	restartFullPageJS: function() {
 		$.fn.fullpage.destroy('all');
-
-		$('.univernPage').fullpage({
-		});
-
+		$('.univernPage').fullpage();
 		return Session.get('updated');
 	}
 });

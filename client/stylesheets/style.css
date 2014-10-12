@@ -18,20 +18,14 @@ h1 {
 	font-size: 3em;
 	line-height: 1.5em;
 	width: 70%;
-	margin-left: 5%;
-	margin-right: 5%;
-	padding-top: 6vh;
-	margin-top: 0;
+	margin-left: 3%;
 	text-transform: uppercase;
-}
-
-h2 {
-	font-size: 1.8em;
+	margin-top: 0.5em;
 }
 
 h3 {
+	margin: 0;
 	font-size: 2em;
-	margin-bottom: 0;
 }
 
 h4 {
@@ -53,40 +47,70 @@ a {
 	text-decoration: none;
 }
 
-p {
-	font-weight: 400;
-	font-size: 1.2em;
+a:hover {
+	color: #5A8AE2;
 }
 
-.play-video {
-	position: absolute;
-	top: 45%;
-	left: 45%;
-	font-size: 7em;
-	color: rgb(201,0,0);
-}
 
-.play-video:hover {
-	color: #242424;
-	cursor: pointer;
-}
-
-.home {
-	position:absolute; left: 0; right: 0; bottom: 0; top: 0px;
-}
-
-.baseline {
-	font-size: 1.5em;
-	padding-left: 5%;
-	padding-right: 40%;
+/********* General Classes *******************/
+.fp-tableCell {
 	vertical-align: top;
-	line-height: 1.5em;
+}
+
+.fp-controlArrow.fp-next {
+	border-color: transparent transparent transparent #242424;
+}
+
+.black-wavy {
+	background-image: url(/general_logos/bckg_wavy_black.png);
+}
+
+.blue-wavy {
+	background-image: url(/general_logos/bckg_wavy_blue.png);
+}
+
+.green-wavy {
+	background-image: url(/general_logos/bckg_wavy_green.png);
+}
+
+.red-wavy {
+	background-image: url(/general_logos/bckg_wavy_red.png);
+}
+
+.grey-wavy {
+	background-image: url(/general_logos/bckg_wavy_grey.png);
+}
+
+.centered {
+	text-align: center;
+}
+
+.img-bckg {
+	webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bar {
+	width: 80%;
+	background-color: rgba(90,138,226,0.6);
+	font-weight: 700; 
+	font-size: 1.5em;
+	padding-left: 0.5em;
+}
+
+.actionIcon:hover {
+	border: 1px solid #fffff1;
+	padding: 2px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
 }
 
 hr {
 	border: none;
 	overflow: hidden;
-	padding-left: 5%;
 }
 
 hr:after {
@@ -94,37 +118,34 @@ hr:after {
 	letter-spacing: 8px; /* Use letter-spacing to increase space between dots*/
 }
 
-.actionBtn:hover {
-	color: #242424;
+/************** For the viseo player *******/
+.mfp-fade.mfp-bg {
+	opacity: 0.001; /* Chrome opacity transition bug */
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
 }
-
-.actionIcon:hover {
-	border: 1px solid #fffff1;
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
 }
-
-.scroll-explanation {
-	position: absolute;
-	bottom: 10px;
-	left: 49%;
-}
-
-.scroll-explanation .text {
-	font-weight: 700;
+.mfp-fade.mfp-bg.mfp-removing {
 	opacity: 0;
 }
 
-.start-arrow.fa {
-	font-size: 3em;
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
 }
-
-.start-arrow.fa:hover {
-	color: #5A8AE2;
-	cursor: pointer;
-}
-
-.start-arrow.fa:hover + .text {
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
 	opacity: 1;
 }
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+/********* Header *********************/
 
 .header {
 	position: fixed;
@@ -167,168 +188,101 @@ hr:after {
 	width: 100%;
 }
 
-.footer {
-	height:10vh;
-	width: 100%;
-	border-top: 2px solid white;
-}
 
-.bckg-full {
-	width: 100%;
-	height: 100vh;
-}
+/********* Splash Screens *************/
 
-.bckg-half {
-	width: 100%;
-	height: 45vh;
-}
-
-.bckg-full.video {
-	background: url(/people_photos/george_koulouris.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-.bckg-half:hover {
-	opacity: 0.6;
-	color: #242424;
-	cursor: pointer;
-	-webkit-transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
-	-moz-transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
-	-ms-transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
-	-o-transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
-	transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.black-wavy {
-	background-image: url(/general_logos/bckg_wavy_black.png);
-}
-
-.blue-wavy {
-	background-image: url(/general_logos/bckg_wavy_blue.png);
-}
-
-.green-wavy {
-	background-image: url(/general_logos/bckg_wavy_green.png);
-}
-
-.red-wavy {
-	background-image: url(/general_logos/bckg_wavy_red.png);
-}
-
-.grey-wavy {
-	background-image: url(/general_logos/bckg_wavy_grey.png);
-}
-
-.splash-screen {
-	text-align: center;
-}
-
-.splash-screen hr {
-	padding-left: 0;
-	font-size: 2em;
-	margin-bottom: 2em;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.splash-screen .baseline {
-	font-size: 2em;
-	padding: 0;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .splash-screen .logo {
-	width: 100%;
-	padding-top: 10vh;
+	width: 40%;
+	margin-top: 5%;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center
 }
 
 .splash-screen .logo img {
-	width: 30%;
-}
-
-.bckg-half .logo {
-	padding-top: 6vh;	
-	float: left;
-	padding-left: 5%;
-	width: 20%;
-	margin-right: 2em;
-}
-
-.bckg-half .logo img {
 	width: 100%;
 }
 
-.bckg-half {
-	border-bottom: 1px solid #fffff1;
+.splash-screen .baseline {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.bckg-half .baseline {
-	font-size: 4em;
-	margin: 0;
-	width: 70%;
-	padding-top: 6vh;
-	color: #242424;
+.splash-screen .scroll-explanation {
+	margin-left: 5%;
+	margin-top: 1em;
 }
 
-.short-description-home {
+.splash-screen .scroll-explanation .text {
+	font-weight: 700;
+	opacity: 0;
+}
+
+.start-arrow.fa {
+	font-size: 3em;
+}
+
+.start-arrow.fa:hover {
+	color: #5A8AE2;
+	cursor: pointer;
+}
+
+.start-arrow.fa:hover + .text {
+	opacity: 1;
+}
+
+/********* Video Definition *************/
+.img-bckg.video {
+	background: url(/people_photos/george_koulouris.jpg) no-repeat center center fixed;
+}
+
+.img-bckg .short-description-home {
 	float: right;
 	table-layout: fixed;
 }
 
-.short-description-home .line {
+.img-bckg h1 {
+	height: 45%;
+}
+
+.img-bckg .line {
 	text-align: left;
 	margin-left: 0;
 	padding-left: 0;
 	width: 15%;	
 }
 
-.short-description-home .text {
+.img-bckg .text {
 	font-weight: 400;
 	font-size: 1.5em;
 	text-align: left;	
 }
 
-.arrow-down {
-	width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 15px solid #fffff1;
-	margin: 0 auto 1em auto;
+.play-video {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	font-size: 7em;
+	color: rgb(201,0,0);
 }
 
-.short-description {
-	height: 45%;
-	margin-top: 0;
+.play-video:hover {
+	color: #242424;
+	cursor: pointer;
 }
 
-.short-description-home .icon{
-	width: 40%;
-	text-align: center;
-}
-
-.short-description-home .fa {
-	font-size: 3em;
-}
-
-.short-description-home .line {
-	text-align: left;
-}
+/* What is it? ----------- */
 
 .explanation {
 	table-layout: fixed;
-}
-
-.logo-section {
-	vertical-align: middle;
+	height: 80%;
+	width: 100%
 }
 
 .explanation .logo-section {
@@ -354,13 +308,9 @@ hr:after {
 	width: 100%;
 }
 
-.explanation .title {
-	margin-bottom: 0;
-}
-
 .explanation .body {
 	width: 70%;
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
 .explanation hr {
@@ -370,97 +320,89 @@ hr:after {
 	width: 90%
 }
 
-.explanation .title h1 {
-	margin-bottom: 0;
-	padding: 0;
+/* Action Buttons on home screen ----------- */
+
+.half-screen a {
+	display: block;
+	border-bottom: 1px solid #fffff1;
+	height: 45%; 
 }
 
-.mfp-fade.mfp-bg {
-	opacity: 0.001; /* Chrome opacity transition bug */
-	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
-	transition: all 0.15s ease-out;
-}
-.mfp-fade.mfp-bg.mfp-ready {
-	opacity: 0.8;
-}
-.mfp-fade.mfp-bg.mfp-removing {
-	opacity: 0;
+.half-screen a:hover {
+	opacity: 0.7; 
 }
 
-.mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
-	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
-	transition: all 0.15s ease-out;
-}
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1;
-}
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0;
-}
-
-.menu-title {
-	font-size: 1.9vh;
-	margin-top: 1.5vh;
-	padding-left: 2em;
+.half-screen .logo {
+	width: 20%;
 	float: left;
-	font-weight: 700;
-}
-
-.menu-title:hover {
-	color: #5A8AE2;
-	cursor: pointer;
-}
-
-.social {
-	float: right;
+	margin-top: 1em;
+	margin-left: 1em;
 	margin-right: 1em;
 }
 
-.social .fa {
-	float: left;
-	font-size: 3vh;
-	margin-top: 1.5vh;
-	padding-left: 2em;
-	color: #fffff1;
+.half-screen img {
+	width: 100%; 
 }
 
-.social .fa:hover {
-	color: #5A8AE2;
-	cursor: pointer;
-}
-
-.univernIntroduction h1 {
-	text-align: center;
-	padding: 6vh 0 0 0;
-	margin: 0;
-	width: 100%;
+.half-screen .baseline {
+	font-size: 3em;
 	color: #242424;
+	padding-top: 1em;
+	width: 50%;
+	float: left;
 }
 
-.univernIntroduction h2 {
+.footer {
+	height: 10%;
+	width: 100%;
+}
+
+/***** Univern Intro *****/
+.univern-introduction-table {
+	color: #242424;
+	width: 100%;
+	height: 100%;
+}
+
+.univern-introduction-table  h1 {
+	width: 100%;
+	margin-left: 0;
+}
+
+.univern-introduction-table  .logo {
+	width: 100%;
+}
+
+.univern-introduction-table  .logo img {
+	width: 20%;
+}
+
+.univern-introduction {
+	color: #242424;
+	text-align: center;
+}
+
+.univern-introduction h1 {
+	padding: 1em 0 0 0;
+	margin: 0;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.univern-introduction  h2 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
 	font-weight: 400;
-	margin-top: 20vh;
+	margin-top: 4em;
 	text-align: justify;
-	color: #242424;
 }
 
-.univernIntroduction .logo {
-	text-align: center;
-}
-
-.fp-controlArrow.fp-next {
-	border-color: transparent transparent transparent #242424;
-}
-
-.univernSkills .skill {
+/****** Univern Skills ****/
+.univern-skills .skill {
 	width: 25%;
-	height: 30%;
+	height: 20%;
 	margin-left: 5%;
 	margin-bottom: 5%;
 	float: left;
@@ -468,12 +410,7 @@ hr:after {
 	text-align: center;
 }
 
-.univernSkills .skill:hover {
-	opacity: 0.5;
-}
-
-
-.univernSkills .logo {
+.univern-skills img {
 	margin-top: 1em;
 	height: 60%;
 	width: 100%;
@@ -481,7 +418,7 @@ hr:after {
 	margin-left: auto;
 }
 
-.univernSkills .text {
+.univern-skills .text {
 	font-size: 1.5em;
 	font-weight: 700;
 	width: 80%;
@@ -490,70 +427,50 @@ hr:after {
 	margin-right: auto;
 }
 
-.univernSkills .explanation-block {
+.univern-skills .explanation-block {
 	margin-left: 5%;
 	position: absolute;
-	width: 25%;
-	height: 30%;
+	width: 30%;
+	height: 20%;
 	left: -500px;
-	background-color: rgba(0,0,0,0.9);
+	background-color: rgba(0,0,0,0.95);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 
-.univernSkills .explanation-text {
+.univern-skills .explanation-text {
 	position: absolute;
 	width: 90%;
 	height: 90%;
 	margin: 5%;
-	}
+	font-size: 1.5em;
+}
 
-.univernSkills .explanation-text h3 {
+.univern-skills .explanation-text h3 {
 	margin: 0;
 }
 
-.social.navbar {
-	display: none;
-}
-
-.slide.amazingPeople {  
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 100%;
-}
-
-.amazingPeople .fp-tableCell {
-	vertical-align: top;
-	height: auto;
-}
-
-.amazingPeople .title {
+/****** Amazing People ****/
+.amazing-people .title {
 	margin-left: 5%;
 }
 
-.amazingPeople .title h3 {
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-.amazingPeople .title hr {
+.amazing-people .title hr {
 	margin-top: 0;
-	padding-top: 0;
+	margin-left: 5%;
 }
 
-.amazingPeople .title .name {
+.amazing-people .title .name {
 	margin-left: 5%;
 	text-transform: uppercase;
 }
 
-.amazingPeople .title .profession {
+.amazing-people .title .profession {
 	font-weight: 400;
 }
 
-.amazingPeople .description {
+.amazing-people .description {
 	font-weight: 400;
 	margin-left: 10%;
 	font-size: 1.6em;
@@ -561,34 +478,23 @@ hr:after {
 	float: left;
 }
 
-.amazingPeople .links {
+.amazing-people .links {
 	float: right;
 	width: 40%;
 }
 
-.bar {
-	width: 80%;
-	background-color: rgba(90,138,226,0.6);
-	font-weight: 700; 
-	font-size: 1.5em;
-	padding-left: 0.5em;
-}
-
-.amazingPeople .links .icons {
+.amazing-people .links .icons {
 	margin-top: 0.5em;
 	margin-bottom: 1em;
 	font-size: 1.7em;
 	padding-left: 0.5em;
 }
 
-.amazingPeople .links .icons .icon{
+.amazing-people .links .icons .icon{
 	margin-right: 1em;
 }
 
-.projects .fp-tableCell {
-	vertical-align: top;
-}
-
+/********** Projects **********/
 .projects h1 img {
 	float: left;
 	width: 1em;
@@ -643,15 +549,15 @@ hr:after {
 	margin-right: 2em;
 }
 
-.univernContact h1 {
+/******* Contact *******/
+.contact h1 {
 	text-align: center;
-	padding-left: 0;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
 }
 
-.univernContact h2 {
+.contact h2 {
 	font-weight: 300;
 	text-align: center;
 	margin-top: 0;
@@ -659,23 +565,26 @@ hr:after {
 	text-transform: uppercase;
 }
 
-.univernContact .social {
-	float: none;
+.contact .social {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	margin-top: 20vh;
+	margin-top: 10%;
+	text-align: center;
 }
 
-.univernContact .social.icons .fa {
+.contact .social.icons .fa {
 	font-size: 8em;
-	padding-left: 0
-	padding-right: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+	cursor:pointer;
 }
 
 .helpdesk h1 {
 	margin-bottom: 1em;
 }
+
+/******* Helmpdesk*******/
 
 .helpdesk .logo {
 	width: 30%;
@@ -695,60 +604,44 @@ hr:after {
 	font-weight: 400;
 }
 
-.splash-screen.project-intro {
-	padding-top: 10vh;
-}
+/****** Project page *******/
 
-.splash-screen.project-intro .fa {
-	color: rgb(201,0,0);
-}
-
-.splash-screen.project-intro .fa:hover {
-	color: #fffff1;
-	cursor: pointer;
-}
-
-.splash-screen.project-intro .baseline {
-	padding-left: 0;
-	font-weight: 400;
-}
-
-.splash-screen.project-intro .splash-screen.logo img {
-	height: 100%;
-}
-
-.splash-screen.project-intro .splash-screen.logo-letters {
-	padding-left: 0;
-}
-
-.splash-screen.project-intro .splash-screen.logo-letters h1 {
-	margin-bottom: 0;
-	margin-left: 0;
-	font-size: 5em;
-}
-
-.project-image img {
-	width: 200px;
-}
-
-.splash-screen.project-intro .logo {
+.splash-screen.project-intro .logo img {
 	width: 30%;
 }
 
-.splash-screen.project-intro .logo-letters {
-	width: 80%;
+.splash-screen.project-intro h1 {
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	width: 60%;
 }
 
-.splash-screen.project-intro .logo-letters h1 {
-	width: auto;
-	margin: 0;
-	font-size: 4em;
+.splash-screen.project-intro h1 a {
+	color: rgb(201,0,0);
 }
 
-.project-processes .fp-tableCell {
-	vertical-align: top;
+.splash-screen.project-intro h1 a:hover {
+	color: #fffff1;
+}
+
+.splash-screen.project-intro hr {
+	font-size: 2em;
+	margin: 0 auto 0 auto;
+	width: 60%;
+	text-align: center;
+}
+
+.splash-screen.project-intro .baseline {
+	font-weight: 700;
+}
+
+.project-skills {
+	height: 100%;
+}
+
+.project-processes {
+
 }
 
 .project-processes h1 {
@@ -799,177 +692,117 @@ hr:after {
 	color: #242424;
 }
 
+.social.icons {
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+}
+
+.social.icons a {
+	display: inline;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+}
 
 
 
 /* Smartphones (portrait or landscape) ----------- */
 @media screen and (max-device-width: 640px){
 	body {
-		font-size: 40px;
+		font-size: 13px;
 	}
 
 	h1 {
-		font-size: 3em;
-		line-height: 2em;
+		font-size: 1.5em;
 		width: 80%;
+		margin-left: 3em;
+		margin-top: 0.5em;
+	}
+
+	h2 {
+		font-size: 1em;
 	}
 
 	h3 {
-		margin-top: 0;
+		font-size: 1em;
 	}
 
-	.fp-controlArrow {
-		margin-top: 0;
+	/********* Header *********************/
+	.header {
+		width: 100%;
 	}
 
-	.fp-controlArrow.fp-prev {
-		border-width: 3em;
-		left:0;
+	.header .trigger-header {
+		top: 1%;
+		font-size: 2.5em;
 	}
 
-	.fp-controlArrow.fp-next {
-		border-width: 3em;
-		right: 0;
-	}
-
-	.splash-screen .logo img {
+	/********* Splash Screens *************/
+	.splash-screen .baseline {
 		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-
-	.short-description-home {
-		width: 40%;
-		margin-top: 20%;
+	.splash-screen hr {
+		width: 50%;
 	}
 
-	.short-description-home .text {
-		font-size: 2em;
+	/* What is it? ----------- */
+	
+
+	.explanation h3 {
+		width: 70%;
+	}
+
+	.explanation hr {
+		width: 70%;
 	}
 
 	.explanation .logo-section {
-		width: 100%;
+		width: 30%;
 		vertical-align: top;
 	}
 
 	.explanation .body {
-		width: 80%;
-		font-size: 1.6em;
+		width: 90%;
+		font-size: 1.1em;
 	}
 
-	.bckg-half .baseline {
-		font-size: 3.3em;
-	}
-
-	.univernIntroduction h2 {
-		font-size: 2.7em;
-		margin-top: 10vh;
-		text-align: left;
-	}
-
-	.univernIntroduction .logo {
-		width: 100%;
-	}
-
-	.univernIntroduction .logo img {
-		width: 40%;
-	}
-
-	.univernSkills .skill {
-		width: 40%;
-		height: 25%;
-	}
-
-	.univernSkills .logo {
-		width: 50%;
-	}
-
-	.univernSkills .text {
+	/* Action Buttons on home screen ----------- */
+	.half-screen .baseline {
 		font-size: 2em;
 	}
 
-	.univernSkills .explanation-block {
-		width: 45%;
-		height: 28%;
+	/****** Univern Skills ****/
+	.univern-skills .explanation-text {
+		font-size: 1em;
 	}
 
-	.univernSkills .explanation-text {
-		font-size: 1.6em;
-	}
-
-	.amazingPeople .description {
-		font-size: 2em;
+	/****** Amazing People ****/
+	.amazing-people .description {
+		font-size: 0.8em;
 	}
 
 	.bar {
-		font-size: 2em;
+		margin-right: 1em;
 	}
 
-	.amazingPeople .links .icons {
-		font-size: 2.5em;
-		width: 80%;
-	}
-
-	.projects .info hr {
-		display: none;
-	}
-
-	.projects .info .description{
-		font-size: 3em;
-	}
-
-	.projects .skills {
-		font-size: 1.5em;
-	}
-
+	/****** Helpdesk ******/
 	.helpdesk .description {
-		font-size: 2.5em;
+		font-size: 1.3em;
 	}
-}
 
+}
 /* Smartphones (portrait) ----------- */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
-	.bckg-half .logo {
-		float: none;
-		width: 30%;
-		margin-right: auto;
-		margin-left: auto;
+
+	h2 {
+		font-size: 1.3em;
 	}
 
-	.splash-screen {
-		width: 90%
-	}
-
-	.splash-screen .logo img {
-		width: 75%;
-	}
-
-	.splash-screen .baseline {
-		font-size: 3em;
-		width: 60%;
-	}
-
-	.splash-screen hr {
-		margin-top: 2em;
-	}
-
-	.scroll-explanation {
-		left: 40%;
-	}
-
-	.bckg-half .baseline {
-		padding-top: 0;
-		margin-right: auto;
-		margin-left: auto;
-		font-size: 3.3em;
-		text-align: center;
-	}
-
-	.explanation .body {
-		font-size: 2em;
-	}
-
-	.header {
-		width: 40%;
+	h3 {
+		font-size: 1.2em;
 	}
 
 	h4 {
@@ -977,40 +810,132 @@ hr:after {
 	}
 
 	h5 {
-		font-size: 1.2em;
-		margin-bottom: 1em;
+		font-size: 1.3em;
 	}
 
-	.social.navbar {
-		display: inline;
+	/********* Splash Screens *************/
+
+	.splash-screen hr {
+		width: 70%;
+		margin-left: 8%;
 	}
 
-	.social.icons {
-		display: none;
+	.splash-screen .logo {
+		width: 70%;
+		margin-left: 8%;
+		margin-right: 0;
 	}
 
-	.phone-social-header.social.icons {
-		display: inline;
+	.splash-screen .baseline {
+		margin-left: 8%;
 	}
 
-	.amazingPeople .description {
-		font-size: 2em;
+	/********* Video *************/
+	.play-video {
+		left: 43%;
+		top: 45%;
+		font-size: 4em;
+	}
+
+	.short-description-home {
+		width: 100%;
+		margin-top: 20%;
+	}
+
+	.short-description-home .text {
+		font-size: 1.1em;
+		text-align: center;
+	}
+
+	/* What is it? ----------- */
+	.explanation {
+		height: 100%;
+	}
+
+	/* Action Buttons on home screen ----------- */
+	.half-screen a {
+		text-align: center;
+	}
+
+	.half-screen .logo {
+		width: 30%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		padding-top: 1em;
+	}
+
+	.half-screen .baseline {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		width: 90%;
+		font-size: 1.5em;
+	}
+
+	/***** Univern Intro *****/
+	.univern-introduction-table  .logo img {
+		width: 50%;
+	}
+
+	.univern-introduction  h2 {
+		text-align: left;
+	}
+
+	/****** Univern Skills ****/
+	.univern-skills .skill {
+		height: 13%;
+		width: 40%;
+		margin-bottom: 1%; 
+	}
+
+	.univern-skills .text {
+		font-size: 1em;
+	}
+
+	.univern-skills .explanation-block {
+		height: 13%;
+		width: 45%;
+	}
+
+	.univern-skills img {
+		width: 50%;
+	}
+
+	/****** Amazing People ****/
+	.amazing-people {  
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100%;
+	}
+
+	.amazing-people .fp-tableCell {
+		vertical-align: top;
+		height: auto;
+	}
+	.bckg-full {
+		height: 100%;
+		width: 100%;
+	}
+
+	.amazing-people .description {
+		font-size: 1.1em;
 		width: 70%;
 		margin-left: 15%;
 		float: none;
 	}
 
-	.amazingPeople h1 {
-		font-size: 2.5em;
-	}
-
-	.amazingPeople .links {
-		width: 80%;
+	.amazing-people .links {
+		width: 70%;
 		margin-left: 15%;
 		float: none;
 		margin-top: 10%;
 	}
 
+	/********** Projects ****/
 	.projects .logo {
 		width: 100%;
 		float: none;
@@ -1038,251 +963,135 @@ hr:after {
 		margin-top: 1em;
 	}
 
-
-	.univernContact .social {
-		width: 10%;
-		text-align: center;
-		margin: 1em auto 0 auto;;
-
+	.projects .info .description {
+		font-size: 1.3em;
+		font-weight: 700;
 	}
 
-	.univernContact .social.icons {
-		display: block;
+	/******* Contact *****/
+	.contact .social.icons .fa {
+		margin-bottom: 1em;
+		font-size: 6em;
 	}
 
-	.univernContact .social.icons .fa {
-		margin-bottom: 2em;
-		padding: 0;
+	/***** Projects ******/
+	.splash-screen .logo {
 		margin-left: 0;
+		margin-right: 0;
 	}
 
-	.project-processes h2 {
-		width: 80%;
-	}
-
-	.project-processes h3 {
-		width: 50%;
-		margin-left: 15%;
+	.splash-screen.project-intro h1 {
+		margin-left: 0;
+		margin-right: 0;
 		font-size: 2.5em;
 	}
 
-	.project-processes .links {
-		width: 5%;
-		font-size: 4em;
-		margin-top: 2em;
-		margin-left: 35%;
+	.splash-screen.project-intro hr {
+		width: 100%;
 	}
 
-	.project-processes .links .fa {
-		margin-bottom: 2em;
+	.project-processes h2 {
+		text-align: left;
+		margin-left: 10%;
+		width: 70%;
+	}
+
+	.project-processes hr {
+		width: 100%;
+	}
+
+	.project-processes h3 {
+		text-align: left;
+		margin-left: 10%;
+		width: 50%;
+	}
+
+	.project-processes .links {
+		text-align: left;
+		margin-left: 15%;
+	}
+
+	.social.icons {
+		font-size: 2em;
 	}
 }
 
 /* Smartphones (landscape) ----------- */
 @media screen and (max-device-width: 640px) and (orientation: landscape){
-	.header {
-		height: 10vh;
+
+	/********* Header *********************/
+	.header .logo {
+		width: 15%;
 	}
 
-	.menu-title {
-		font-size: 3vh;
-		margin-top: 2.5vh;
-	}
-
-	.social .fa {
-		font-size: 5vh;
-		margin-top: 2.1vh;
-	}
-
-	.play-video {
-		top: 40%;
-		left: 40%;
-	}
-
-	.short-description-home {
-		width: 30%;
+	/********* Splash Screens *************/
+	.splash-screen .baseline {
+		margin-bottom: 0;
 		margin-top: 0;
 	}
 
-	.univernSkills .skill {
+	.splash-screen .logo {
+		width: 30%;
+	}
+
+	.splash-screen .scroll-explanation {
+		margin-left: auto;
+		margin-top: 1em;
+		margin-right: auto;
+		text-align: center;
+		width: 10%;
+	}
+
+	.splash-screen .scroll-explanation .fa {
+		font-size: 2em;
+	}
+
+	/********* Video *************/
+	.play-video {
+		font-size: 4em;
+	}
+
+	.img-bckg .short-description-home {
+		width: 40%;
+	}
+
+	.img-bckg .text {
+		font-size: 1em;
+	}
+
+	.img-bckg .line {
+		margin-top: 0;
 		margin-bottom: 0;
 	}
 
-	.univernSkills .explanation-text {
-		margin: 2%;
+	.img-bckg h1 {
+		height: 30%;
 	}
 
-	.univernSkills .explanation-text p {
-		margin-top: 0;
+	/****** Univern Skills ****/
+	.univern-skills .skill {
+		height: 15%;
+		margin-bottom: 1%; 
 	}
 
-	.splash-screen .logo img {
-		width: 40%;
-	}
-}
-
-/*  Tablets Portrait or Landscape */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-	.baseline {
-		padding-right: 10%;
-		font-size: 2.5em;
+	.univern-skills .text {
+		font-size: 1em;
 	}
 
-	.short-description-home {
-		width: 40%;
-		margin-top: 20%;
+	.univern-skills .explanation-block {
+		height: 20%;
 	}
 
-	.short-description-home .text {
-		font-size: 2em;
-	}
-
-	.explanation .body {
-		font-size: 1.3em;
-	}
-}
-
-/*  Tablets Landscape */
-@media screen and (max-device-width: 1024px) and (orientation: landscape){
-	.short-description-home {
-		width: 40%;
-		margin-top: 0;
-	}
-
-	.bckg-half .baseline {
-		width: 80%;
-	}
-}
-
-/*  Tablets Portrait */
-@media screen and (min-device-width: 768px) and (orientation: portrait){
-
-	.splash-screen .logo img {
-		width: 80%;
-	}
-
-	.splash-screen .baseline {
-		width: 60%;
-		font-size: 3em;
-	}
-
-	.bckg-half .logo {
-		float: none;
-		width: 30%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.univernSkills .skill {
-		width: 40%;
-		height: 25%;
-	}
-
-	.univernSkills .logo {
+	.bar {
 		width: 50%;
+		margin-right: 1em; 
+		font-size: 1em;
 	}
 
-	.univernSkills .text {
-		font-size: 2em;
+	/****** Projects ****/
+	.projects .info .description {
+		font-size: 1em;
+		font-weight: 700;
 	}
-
-	.univernSkills .explanation-block {
-		width: 45%;
-		height: 28%;
-	}
-
-	.univernSkills .explanation-text {
-		font-size: 1.6em;
-	}
-
-	.bckg-half .baseline {
-		padding-top: 0;
-		margin-right: auto;
-		margin-left: auto;
-		font-size: 3.3em;
-		text-align: center;
-	}
-
-	.explanation .body {
-		font-size: 2em;
-	}
-
-	.social.navbar {
-		display: inline;
-	}
-
-	.social.icons {
-		display: none;
-	}
-
-	.phone-social-header.social.icons {
-		display: inline;
-	}
-
-	.amazingPeople .description {
-		font-size: 2em;
-		width: 70%;
-		margin-left: 15%;
-		float: none;
-	}
-
-	.amazingPeople h1 {
-		font-size: 2.5em;
-	}
-
-	.amazingPeople .links {
-		width: 80%;
-		margin-left: 15%;
-		float: none;
-		margin-top: 10%;
-	}
-
-	.projects .logo {
-		width: 100%;
-		float: none;
-		margin: 0;
-		text-align: center;
-	}
-
-	.projects .logo img {
-		width: 50%;
-	}
-
-	.projects .info {
-		float: none;
-		width: 80%;
-		margin-left: 15%;
-	}
-
-	.projects .skills {
-		float: none;
-		width: 60%;
-		margin-left: 15%;
-	}
-
-	.projects .info .title {
-		margin-top: 1em;
-	}
-
-
-	.univernContact .social {
-		width: 10%;
-		text-align: center;
-		margin: 1em auto 0 auto;;
-
-	}
-
-	.univernContact .social.icons {
-		display: block;
-	}
-
-	.univernContact .social.icons .fa {
-		margin-bottom: 2em;
-		padding: 0;
-		margin-left: 0;
-	}
-
-	.helpdesk .description {
-		font-size: 2.5em;
-	}
+		
 }

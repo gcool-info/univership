@@ -1,3 +1,9 @@
+Template.peopleEdit.rendered = function() {
+
+	$(".header").css('display', 'none');
+}
+
+
 Template.peopleEdit.helpers ({
 	personName: function() {
 		return this.name;
