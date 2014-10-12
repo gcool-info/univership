@@ -1,4 +1,6 @@
 Template.univernPage.rendered = function() { 
-	$('.univernPage').fullpage({
-	});
+	$('.univernPage').fullpage();
+
+	//
+	$(".first-univern").show(400);
 }

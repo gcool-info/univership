@@ -14,3 +14,5 @@ cfs:standard-packages
 mizzao:autocomplete
 cfs:gridfs
 sunkay:easy-side-menu
+mrt:iron-router-progress
+

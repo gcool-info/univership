@@ -1,6 +1,7 @@
 Template.header.rendered = function() {
-	// Hide the menu
-	$(".header").css('left', -$(".header").width());
+	// Hide the menu if we are on a mobile
+	if ($('body').css('font-size') !== '16px')
+		$(".header").css('left', -$(".header").width());
 }
 
 Template.header.helpers({
@@ -14,8 +15,12 @@ Template.header.helpers({
 
 Template.header.events({
 	'click .menu-item':function() {
-		$(".trigger-header").animate({'left' : "105%"});
-		$(".header").animate({'left' : -$(".header").width() });
+		// Hide the menu if we are on a mobile
+		if ($('body').css('font-size') !== '16px') {
+			$(".header").css('left', -$(".header").width());
+			$(".trigger-header").animate({'left' : "105%"});
+			$(".header").animate({'left' : -$(".header").width() });
+		}
 	},
 	'click .show-submenu':function() {
 		$(".first-univern").show(400);
