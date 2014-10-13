@@ -46,9 +46,6 @@ Template.header.events({
 	'click #skills': function() {
 		$.fn.fullpage.moveTo(2, 0);
 	},
-	'click #skills': function() {
-		$.fn.fullpage.moveTo(2, 0);
-	},
 	'click #people': function() {
 		$.fn.fullpage.moveTo(3, 0);
 	},
