@@ -620,6 +620,7 @@ hr:after {
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
+	margin-bottom: 0;
 }
 
 .splash-screen.project-intro h1 a {
@@ -639,6 +640,8 @@ hr:after {
 
 .splash-screen.project-intro .baseline {
 	font-weight: 700;
+	width: 60%;
+	margin-top: 0;
 }
 
 .project-skills {

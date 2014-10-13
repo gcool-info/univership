@@ -1,7 +1,5 @@
 Template.projectPage.rendered = function() {
 	$('.project-page').fullpage();
-
-	$('.header').css('display','none');
 }
 
 Template.projectPage.helpers({
