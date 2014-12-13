@@ -11,7 +11,7 @@ Template.amazingPeople.helpers({
 
 		if (amazingPhoto) {
 			Session.set("updated", new Date());
-			return 'background: url(' + amazingPhoto.url() + ') no-repeat center center fixed; background-size: cover;';
+			return 'background: url(' + amazingPhoto.url() + '); background-size: cover;';
 		}
 	},
 	getProjects:function() {

@@ -239,7 +239,8 @@ hr:after {
 
 /********* Video Definition *************/
 .img-bckg.video {
-	background: url(/people_photos/george_koulouris.jpg) no-repeat center center fixed;
+	background: url(/people_photos/george_koulouris.jpg);
+	background-size: cover;
 }
 
 .img-bckg .short-description-home {
