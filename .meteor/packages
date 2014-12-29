@@ -7,12 +7,11 @@ meteor-platform
 accounts-password
 iron:router
 natestrauser:font-awesome
-lawshe:full-page
 gabrielengel:konecty-magnific-popup
 mrt:accounts-ui-bootstrap-dropdown
 cfs:standard-packages
 mizzao:autocomplete
 cfs:gridfs
-sunkay:easy-side-menu
 multiply:iron-router-progress
 
+bootstrap
