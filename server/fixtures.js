@@ -142,13 +142,14 @@ if (Meteor.users.find().count() == 0) {
 	
 }
 
-/* Add 2 projects */
-if (Project.find().count() == 0) {	
-}
-
-/* Add 3 locations */
+/* Add 2 locations */
 if (Locations.find().count() == 0) {
 	
+}
+
+/* Add 1 project */
+if (Project.find().count() == 0) {	
+
 }
 
 /* Add 2 Posts */
