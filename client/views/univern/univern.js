@@ -1,0 +1,2 @@
+Template.univern.rendered = function() {
+}
