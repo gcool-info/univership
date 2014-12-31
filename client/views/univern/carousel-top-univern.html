@@ -1,0 +1,53 @@
+<template name="carouselTopUnivern">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			{{#if getVideo}}
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			{{else}}
+				{{#if isOwner}}
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				{{/if}}
+			{{/if}}
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				{{#if getPhoto}}
+					<div class="jumbotron intro-image" style="background-image: url({{getPhoto}})"></div>
+				{{else}}
+					<div class="jumbotron intro-image"></div>
+				{{/if}}
+
+				<div class="carousel-caption">
+					{{#if isOwner}}
+						<h1><a href="#"><i class="fa fa-cloud-upload"></i></a></h1>
+					{{/if}}
+					<h1>{{getName}}</h1>
+					<p>
+						{{getBaseline}}
+						{{#if isOwner}}
+							<a href="#"><small><i class="fa fa-pencil"></i></small></a>
+						{{/if}}
+					</p>
+				</div>
+			</div>
+			{{#if getVideo}}
+				<div class="item">
+					<iframe class="intro-video" src="{{getVideo}}" frameborder="0" allowfullscreen></iframe>
+					{{#if isOwner}}
+						<div class="carousel-caption">
+							<h1><a href="#" data-toggle="modal" data-target="#video-upload-modal"><i class="fa fa-cloud-upload"></i></a></h1>
+						</div>
+					{{/if}}
+				</div>
+			{{else}}
+				{{#if isOwner}}
+					<div class="jumbotron intro-image" style="background-color: #fffff1"></div>
+				{{/if}}
+			{{/if}}
+		</div>
+	</div> 
+</template>
