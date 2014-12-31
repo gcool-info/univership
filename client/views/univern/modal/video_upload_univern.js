@@ -4,6 +4,7 @@ Template.videoUploadUnivern.rendered = {
 Template.videoUploadUnivern.helpers({
 
 });
+
 Template.videoUploadUnivern.events({
 	'click #save': function() {
 		var data = {

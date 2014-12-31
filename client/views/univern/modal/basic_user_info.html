@@ -1,0 +1,31 @@
+<template name="basicUserInfo">
+	<!-- Modal for image upload -->
+	<div class="modal fade" id="basic-user-info-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-pencil"></i> Your Information</h4>
+				</div>
+				<div class="modal-body">
+					<div class="input-group small-margin-bottom">
+						<span class="input-group-addon" id="basic-addon1">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					  	<input type="text" class="form-control" placeholder="{{getName}}" aria-describedby="basic-addon1" id="user-name" value="{{getName}}">
+					</div>
+					<div class="input-group small-margin-bottom">
+						<span class="input-group-addon" id="basic-addon2">Surname:</span>
+					  	<input type="text" class="form-control" placeholder="{{getSurname}}" aria-describedby="basic-addon2" id="user-surname" value="{{getSurname}}">
+					</div>
+					<div class="input-group small-margin-bottom">
+						<span class="input-group-addon" id="basic-addon3">Baseline:&nbsp;</span>
+					  	<input type="text" class="form-control" placeholder="{{getBaseline}}" aria-describedby="basic-addon3" id="user-baseline" value="{{getBaseline}}">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" id="save">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
