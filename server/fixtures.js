@@ -144,12 +144,62 @@ if (Meteor.users.find().count() == 0) {
 
 /* Add 2 locations */
 if (Locations.find().count() == 0) {
-	
+
+    Locations.insert({
+        latitude: '2.3508',
+        longtitude: '48.8567',
+        city: 'Paris',
+        country: 'France',
+        dates: {
+            start: 'Fri Dec 26 2014 16:48:53 GMT+0100 (CET)', 
+            end: 'Fri Jan 02 2015 16:48:53 GMT+0100 (CET)',
+        },
+        owner: 'FKKnMctNRaxxohC6p' 
+    });
+
+    Locations.insert({
+        latitude: '74.0059',
+        longtitude: '40.7127',
+        city: 'New York',
+        country: 'United States',
+        dates: {
+            start: 'Mon Nov 03 2014 16:48:02 GMT+0100 (CET)', 
+            end: 'Tue Nov 03 2014 16:18:53 GMT+0100 (CET)',
+        },
+        owner: 'FKKnMctNRaxxohC6p' 
+    });
 }
 
 /* Add 1 project */
 if (Project.find().count() == 0) {	
-
+/*
+title: ""
+shortDescr: ""
+photosID: []
+mainPhoto: {
+    id: ""
+    url: ""
+    thumb: ""
+}
+lesson: {
+   id: ""
+   shortDescr: ""
+}
+type: ""
+dates: {
+    start: ""
+    end: ""
+}
+skills: []
+RelatedPosts: []
+people: []
+author: ""
+location: {
+     id: ""
+     city: ""
+     country: ""
+}
+*/
 }
 
 /* Add 2 Posts */

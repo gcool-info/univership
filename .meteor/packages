@@ -16,3 +16,4 @@ twbs:bootstrap
 accounts-ui
 mrt:bootstrap-alerts
 cfs:graphicsmagick
+cfs:ui

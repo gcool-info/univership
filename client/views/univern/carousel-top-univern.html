@@ -23,6 +23,15 @@
 
 				<div class="carousel-caption">
 					{{#if isOwner}}
+						
+                        {{#with getNewPhoto}}
+                        	{{#unless this.isUploaded}}
+	                        	<div>
+	                            	{{> FS.UploadProgressBar bootstrap=true class='progress-bar-success progress-bar-striped active' showPercent=true}}
+	                            </div>
+	                        {{/unless}}
+                        {{/with}}
+
 						<div class="fileUpload">
 						    <h1><span><i class="fa fa-cloud-upload"></i></span>
 						    <input type="file" class="upload" /></h1>

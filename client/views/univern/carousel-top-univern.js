@@ -33,6 +33,12 @@ Template.carouselTopUnivern.helpers({
 	isOwner: function() {
 
 		return (Meteor.user()._id == this._id ? true : false);
+	},
+	getNewPhoto: function() {
+		var newPhotoID = Session.get('fileID');
+
+        if (newPhotoID)
+            return userPhotos.findOne({"_id": newPhotoID});
 	}
 });
 
@@ -45,34 +51,34 @@ Template.carouselTopUnivern.events({
         };
 
         // Insert the new photo
+        var that = this;
         var handle = userPhotos.insert(newPhoto, function (err, fileObj) {
-        	if (err)
-        		return;        		
+
+        	// Set a session variable to track upload progress
+	        Session.set('fileID', fileObj._id); 
+
+        	if (!err) {
+        		// Update the data on the user profile
+		        var newPhotoData = {
+		        	userID: that._id,
+		        	photoID: fileObj._id
+		        }
+
+		        Meteor.call('updateUserProfilePic', newPhotoData, function(err) {
+					if (err)
+		        		return Alerts.add('Oh-oh.. Here\'s what went wrong: "' + err.reason + '"');
+		        	else {
+		        		// Delete the old photo
+				        var oldPhotoID = that.profile.photo;
+
+				    	userPhotos.remove({'_id': oldPhotoID}, function (err, fileObj) {
+				        	if (err)
+				        		return Alerts.add('Oh-oh.. Here\'s what went wrong: "' + err.reason + '"');     		
+				        });
+		        	} 
+				});
+
+	        }  		
         });
-
-        if (!handle._id)
-        	return;
-
-        // Delete the old photo
-        var oldPhotoID = this.profile.photo;
-
-        if(oldPhotoID !== '') {
-        	userPhotos.remove({'_id': oldPhotoID}, function (err, fileObj) {
-	        	if (err)
-	        		return Alerts.add('Oh-oh.. Here\'s what went wrong: "' + err.reason + '"');        		
-	        });
-	     }
-        
-
-	    // update the data on the user profile
-        var newPhotoData = {
-        	userID: this._id,
-        	photoID: handle._id
-        }
-
-        Meteor.call('updateUserProfilePic', newPhotoData, function(err) {
-			if (err)
-        		return Alerts.add('Oh-oh.. Here\'s what went wrong: "' + err.reason + '"'); 
-		});
 	}
 });
