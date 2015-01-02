@@ -9,7 +9,9 @@ Template.carouselTopUnivern.helpers({
 	},
 	getPhoto: function() {
 
-		return (this.profile.photo.url !== '' ? this.profile.photo.url : false);
+		var photoID = this.profile.photo;
+
+		return (photoID !== '' ? userPhotos.findOne(photoID).url() : false);
 	},
 
 	getVideo: function() {
@@ -31,5 +33,46 @@ Template.carouselTopUnivern.helpers({
 	isOwner: function() {
 
 		return (Meteor.user()._id == this._id ? true : false);
+	}
+});
+
+Template.carouselTopUnivern.events({
+	'change .upload': function(event) {
+		var newPhoto = new FS.File(event.target.files[0]);
+
+		newPhoto.metadata = {
+            owner: this._id
+        };
+
+        // Insert the new photo
+        var handle = userPhotos.insert(newPhoto, function (err, fileObj) {
+        	if (err)
+        		return;        		
+        });
+
+        if (!handle._id)
+        	return;
+
+        // Delete the old photo
+        var oldPhotoID = this.profile.photo;
+
+        if(oldPhotoID !== '') {
+        	userPhotos.remove({'_id': oldPhotoID}, function (err, fileObj) {
+	        	if (err)
+	        		return Alerts.add('Oh-oh.. Here\'s what went wrong: "' + err.reason + '"');        		
+	        });
+	     }
+        
+
+	    // update the data on the user profile
+        var newPhotoData = {
+        	userID: this._id,
+        	photoID: handle._id
+        }
+
+        Meteor.call('updateUserProfilePic', newPhotoData, function(err) {
+			if (err)
+        		return Alerts.add('Oh-oh.. Here\'s what went wrong: "' + err.reason + '"'); 
+		});
 	}
 });

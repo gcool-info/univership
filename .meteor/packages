@@ -14,3 +14,5 @@ multiply:iron-router-progress
 
 twbs:bootstrap
 accounts-ui
+mrt:bootstrap-alerts
+cfs:graphicsmagick
