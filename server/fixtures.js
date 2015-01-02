@@ -171,35 +171,32 @@ if (Locations.find().count() == 0) {
 }
 
 /* Add 1 project */
-if (Project.find().count() == 0) {	
-/*
-title: ""
-shortDescr: ""
-photosID: []
-mainPhoto: {
-    id: ""
-    url: ""
-    thumb: ""
-}
-lesson: {
-   id: ""
-   shortDescr: ""
-}
-type: ""
-dates: {
-    start: ""
-    end: ""
-}
-skills: []
-RelatedPosts: []
-people: []
-author: ""
-location: {
-     id: ""
-     city: ""
-     country: ""
-}
-*/
+if (Project.find().count() == 0) {
+
+    Project.insert({
+        title: 'Multisided Platforms',
+        shortDescr: 'I tried to formally understand how platforms such as Facebook, Google & Amazon gain money.',
+        photos: [],
+        mainPhoto: '',
+        lesson: {
+            id: '',
+            shortDescr: '',
+        },
+        type: 'individual',
+        dates: {
+            start: 'Mon Nov 03 2014 16:48:02 GMT+0100 (CET)', 
+            end: 'Mon Nov 10 2014 16:18:53 GMT+0100 (CET)',
+        },
+        skills: ['EY9y8s6D5cDxPsq59'],
+        relatedPosts: [],
+        people: [],
+        owner: 'FKKnMctNRaxxohC6p',
+        location: {
+             id: 'FKKnMctNRaxxohC6p',
+             city: 'New York',
+             country: 'United States'
+        }
+    })	
 }
 
 /* Add 2 Posts */
