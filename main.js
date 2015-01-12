@@ -10,6 +10,6 @@ Meteor.startup(function() {
 
             ga('create', 'UA-55679725-1', 'auto');
             ga('send', 'pageview');
-        })
+        });
     }
 });

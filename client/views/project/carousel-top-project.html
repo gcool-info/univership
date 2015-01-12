@@ -1,3 +1,20 @@
 <template name="carouselTopProject">
+	<div id="project-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
+		<!-- Images & videos -->
+		<div class="carousel-inner">
+			{{#each getMedia}}
+				{{> singleCarouselPhoto}}
+			{{/each}}
+		</div>
+
+		<div class="col-md-12 hidden-sm hidden-xs text-center" id="slider-thumbs">
+			<ul class="list-inline">
+				{{#each getMedia}}
+					{{ > carouselThumbnails}}
+				{{/each}}
+			</ul>
+		</div>
+
+	</div>
 </template>

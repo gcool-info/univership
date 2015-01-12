@@ -1,0 +1,10 @@
+<template name="singleCarouselPhoto">
+	<div class="item">
+		{{#if isVideo}}
+		<iframe class="intro-video" src="{{getVideo}}" frameborder="0" allowfullscreen></iframe>
+		{{else}}
+		<div class="jumbotron intro-image" style="background-image: url({{getPhoto}})"></div>
+		{{/if}}
+		<div class="carousel-caption">{{getCaption}}</div>
+	</div>
+</template>

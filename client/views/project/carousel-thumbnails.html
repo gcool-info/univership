@@ -1,0 +1,11 @@
+<template name="carouselThumbnails">
+	<li>
+	  	<a id="carousel-selector-{{this.number}}" class="carousel-selector">
+	  		{{#if isVideo}}
+    			<img src="{{getVideoThumb}}" class="img-responsive" width="20%">
+    		{{else}}
+    			<img src="{{getPhoto}}" class="img-responsive" width="20%">
+    		{{/if}}
+		</a>
+	</li>
+</template>

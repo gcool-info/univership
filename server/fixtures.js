@@ -176,7 +176,15 @@ if (Project.find().count() == 0) {
     Project.insert({
         title: 'Multisided Platforms',
         shortDescr: 'I tried to formally understand how platforms such as Facebook, Google & Amazon gain money.',
-        photos: [],
+        media: [
+            { 'id': 'https://www.youtube.com/watch?v=8b9v9rfO_XE&index=1&list=PLn4QGnnI0pJgSVILC1nNVu4Ibz4f5N3bG',
+              'caption': 'This is a video'  
+            }, 
+            {
+                'id': 'http://i.dailymail.co.uk/i/pix/2012/06/20/article-2161985-13B29283000005DC-642_634x432.jpg',
+                'caption': 'This is another video'
+            }
+        ],
         mainPhoto: '',
         lesson: {
             id: '',
