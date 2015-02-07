@@ -27,6 +27,9 @@ Template.projectEdit.helpers({
 	getProjectBody: function() {
 		return this.body;
 	},
+	getProjectBlog: function() {
+		return this.blog;
+	},
 	getLogo: function() {
 		var projectLogo = projectLogos.findOne(this.logo);
 
@@ -120,7 +123,8 @@ Template.projectEdit.events({
 
     	var projectProperties = {
     		title: $(e.target).find('[name=title]').val(), 
-    		body: $(e.target).find('[name=project-body]').val(), 
+    		body: $(e.target).find('[name=project-body]').val(),
+    		blog: $(e.target).find('[name=project-blog]').val(),  
     		type: $(e.target).find('[id=project-type]').val(),
     		introVideo: $(e.target).find('[name=intro-video]').val()
     	}
