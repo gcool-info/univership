@@ -118,6 +118,14 @@ hr:after {
 	letter-spacing: 8px; /* Use letter-spacing to increase space between dots*/
 }
 
+.blog-container {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #212121;
+	font-size: 1.3em;
+}
+
 /************** For the viseo player *******/
 .mfp-fade.mfp-bg {
 	opacity: 0.001; /* Chrome opacity transition bug */
@@ -1028,6 +1036,12 @@ hr:after {
 	.social.icons {
 		font-size: 2em;
 	}
+
+	.blog-container {
+		width: 90%;
+	}
+
+
 }
 
 /* Smartphones (landscape) ----------- */
