@@ -17,5 +17,13 @@ Template.projectIntro.helpers({
 
 		if (logo)
 			return logo.url();
+	},
+
+	noBlog:function() {
+
+		if (!this.blog)
+			return true;
+
+		return false;
 	}
 })

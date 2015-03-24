@@ -1,9 +1,15 @@
 <template name="projectIntro">
 	<div class="logo"><img class="svg" src="{{getLogo}}"/></div>
 	<h1>{{this.title}}&nbsp;
-		<a href="{{this.introVideo}}" class="play">
-			<i class="fa fa-play-circle-o"></i>
-		</a>
+		{{#if noBlog}}
+			<a href="{{this.introVideo}}" class="play">
+				<i class="fa fa-play-circle-o"></i>
+			</a>
+		{{else}}
+			<a href="{{this.introVideo}}">
+				<i class="fa fa-book"></i>
+			</a>
+		{{/if}}
 	</h1>
 	<hr />
 	<div class="baseline">{{{this.body}}}</div>		
