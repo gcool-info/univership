@@ -1,1 +1,1 @@
-Source code for univership.org
+A simplified version of the univership website.

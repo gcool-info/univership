@@ -1,0 +1,16 @@
+{
+	"id"				: 2,
+	"type"				: "placement",
+	"title" 			: "Museomix Platform",
+	"abstract" 			: "Building an online collaboration platform for Museomix Montreal",
+	"logo"				: null,
+	"photo"				: null,
+	"skills"			: ["coding", "design"],
+	"video"				: "https://www.youtube.com/watch?v=dxL0_xZbnP0",
+	"folderLink"		: "https://drive.google.com/file/d/0B-cpmUqy2OFTOTdLaV9JWHNuelE/view",
+	"githubLink"		: "https://github.com/tart2000/microscopic",
+	"external link"		: null,
+	"instructablesLink" : null,
+	"blogContent"		: null,
+	"createdDate"		: "10 Nov, 2014 23:15:00"
+}
