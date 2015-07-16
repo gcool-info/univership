@@ -4,7 +4,32 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+hr {
+	margin-top: 0;
+	border-width: 0.3em;
+	border-color: #212121;
+}
+
+h1 {
+	font-weight: bold;
+}
+
 .navbar-default {
 	background-image: url("");
 	opacity: 0.9;
+}
+
+.red {
+	color: #E36965;
+	border-color: #E36965;
+}
+
+.green {
+	color: #6EC0A4;
+	border-color: #6EC0A4;
+}
+
+.blue {
+	color: #6085C4;
+	border-color: #6085C4;
 }
