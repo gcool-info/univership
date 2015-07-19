@@ -2,7 +2,7 @@
 	"url"				: "multisided-platforms",
 	"type"				: "individual",
 	"title" 			: "Multisided Platforms",
-	"abstract" 			: "I tried to formally understand how platforms such as Facebook, Google & Amazon gain money.",
+	"abstract" 			: "Understanding how platforms such as Facebook, Google & Amazon gain money.",
 	"logo"				: "assets/logos/multisidedplatformslogo.svg",
 	"photo"				: null,
 	"skills"			: ["business"],
