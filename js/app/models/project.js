@@ -3,6 +3,7 @@ define(function (require) {
     return Backbone.Model.extend({
 		default: {
 			"id"				: null,
+			"url"				: null,
 			"type"				: null,
 			"title" 			: null,
 			"abstract" 			: null,

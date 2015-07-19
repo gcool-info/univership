@@ -1,0 +1,16 @@
+{
+	"url"				: "agrockathon",
+	"type"				: "group",
+	"title" 			: "Agrockathon",
+	"abstract" 			: "Organising the 1st Greek Agriculture Hackathon in Crete, GR. Our aim to automate agricultural production processes through technology.",
+	"logo"				: "assets/logos/agrockathonlogo.svg",
+	"photo"				: null,
+	"skills"			: ["coding", "design"],
+	"video"				: "https://www.youtube.com/watch?v=6CC_B6ma4SA",
+	"folderLink"		: "",
+	"githubLink"		: null,
+	"external link"		: "http://agrockathon.eu",
+	"instructablesLink" : null,
+	"blogContent"		: null,
+	"createdDate"		: "7 Jun, 2015 23:15:00"
+}

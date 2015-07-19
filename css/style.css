@@ -33,3 +33,38 @@ h1 {
 	color: #6085C4;
 	border-color: #6085C4;
 }
+
+.red-background {
+	background-color: #E36965;
+}
+
+.green-background {
+	background-color: #6EC0A4;
+}
+
+.blue-background {
+	background-color: #6085C4;
+}
+
+.carousel-background {
+	color: #ffffff;
+	width: 100%;
+	padding-bottom: 1em;
+	padding-top: 2em;
+	margin-bottom: 1em;
+}
+
+.carousel-project-logo {
+	width: 300px;
+	height: 300px;
+	margin-bottom: 2em;
+}
+
+/******** Twitter Bootstrap Customization ********/
+.carousel-control {
+	text-shadow: none;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image:url("");
+}

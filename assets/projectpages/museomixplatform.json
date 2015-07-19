@@ -1,9 +1,9 @@
 {
-	"id"				: 2,
+	"url"				: "museomix-platform",
 	"type"				: "placement",
 	"title" 			: "Museomix Platform",
-	"abstract" 			: "Building an online collaboration platform for Museomix Montreal",
-	"logo"				: null,
+	"abstract" 			: "Building an online collaboration platform for Museomix Montreal.",
+	"logo"				: "assets/logos/museomixplatformlogo.svg",
 	"photo"				: null,
 	"skills"			: ["coding", "design"],
 	"video"				: "https://www.youtube.com/watch?v=dxL0_xZbnP0",

@@ -7,7 +7,9 @@ define(function (require) {
     		var directory = 'assets/projectpages/';
     		var projectFiles = [
 				'museomixplatform',
-				'25sketches'
+				'25sketches',
+				'multisidedplatforms',
+				'agrockathon'
 			];
 			var requests = [];
 
