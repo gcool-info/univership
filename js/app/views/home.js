@@ -5,7 +5,7 @@ define([
 
 	return Backbone.View.extend({
 
-		el: '.container',
+		el: '.full-page',
 		template : _.template(HomeTemplate),
 
 		initialize: function() {
@@ -26,7 +26,5 @@ define([
 		render: function() {
 			this.$el.html( this.template( {} ) );
 		},
-
 	});
-
 });

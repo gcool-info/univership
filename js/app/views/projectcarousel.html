@@ -21,7 +21,7 @@
 	<div class="carousel-inner" role="listbox">
 		<% _.each(projects, function(project) { %>
 			<div class="item <%= dataSlideCounter++ == 0 ? "active" : '' %>">
-				<a href="projects/<%= project.get('url') %>" target="_blank">
+				<a href="#project/<%= project.get('url') %>" target="_blank">
 					<div class = "<%= colorType %>-background carousel-background">
 						<img class="carousel-project-logo" src="<%= project.get('logo') %>" alt="<%= project.get('title') %>" />
 						<h2><%= project.get('title') %></h2>

@@ -1,14 +1,16 @@
 define([
         'js/app/models/jsonmerger.js',
         'js/app/models/portfolio.js',
+        'js/app/models/project.js',
         'js/app/views/header.js',
-        'js/app/views/home.js'
-    ], function (JsonMerger, Portfolio, HeaderView, HomeView) {
+        'js/app/views/home.js',
+        'js/app/views/project.js'
+    ], function (JsonMerger, Portfolio, ProjectModel, HeaderView, HomeView, ProjectView) {
 
         return Backbone.Router.extend({
 
             defaults: {
-                "portfolio" : new Portfolio(),
+                "portfolio" : new Portfolio()
             },
 
             routes: {
@@ -22,7 +24,7 @@ define([
                 var headerView = new HeaderView();
             },
 
-            home: function () { 
+            home: function () {
                 if (!this.portfolio) {
                     this.loadProjects(function() {
                         var homeView = new HomeView({collection : this.portfolio});
@@ -34,10 +36,10 @@ define([
                 var homeView = new HomeView({collection : this.portfolio});
             },
 
-            project: function() {
-                if (!this.portfolio) {
-                    this.loadProjects();
-                }
+            project: function(projectId) {
+                this.loadSingleProject(projectId, function(projectModel) {
+                    var projectView = new ProjectView({model : projectModel});
+                });
             },
 
             legacyURL: function() {
@@ -50,6 +52,22 @@ define([
 
                     if (callback) {
                         callback();
+                    }
+                });
+            },
+
+            loadSingleProject: function(projectId, callback) {
+                var self = this;
+                var projectURL = 'assets/projectpages/' + projectId + '.json';
+                var projectModel = new ProjectModel( );
+
+                projectModel.fetch( { 
+                    url : projectURL,
+                    success: function() {
+                        callback(projectModel);
+                    },
+                    error: function() {
+                        console.log('error');
                     }
                 });
             }
