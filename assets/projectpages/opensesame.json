@@ -1,0 +1,15 @@
+{
+	"url"				: "opensesame",
+	"type"				: "individual",
+	"title" 			: "Open Sesame",
+	"abstract" 			: "A connected doorbell.",
+	"logo"				: "assets/logos/opensesamelogo.svg",
+	"photo"				: "assets/photos/opensesameintro.jpg",
+	"skills"			: ["coding", "design"],
+	"video"				: "https://www.youtube.com/embed/cCg5y-WajbE?rel=0&amp;showinfo=0",
+	"githubLink"		: "https://github.com/gcool-info/connected-doorbell",
+	"externalLink"		: "http://www.instructables.com/id/Open-Sesame/",
+	"fileLink" 			: "opensesameoperationprinciple.pdf",
+	"blogContent"		: null,
+	"createdDate"		: "2014-12-05T18:25:43.511Z"
+}

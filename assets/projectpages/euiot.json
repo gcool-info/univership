@@ -1,0 +1,15 @@
+{
+	"url"				: "euiot",
+	"type"				: "individual",
+	"title" 			: "EU, IoT & Entrepreneurhip",
+	"abstract" 			: "Looking at how Europe is trying to stimulate the IoT ecosystem.",
+	"logo"				: "assets/logos/euiotlogo.svg",
+	"photo"				: "assets/photos/euiotintro.jpg",
+	"skills"			: ["business"],
+	"video"				: null,
+	"githubLink"		: null,
+	"externalLink"		: "https://www.linkedin.com/pulse/20141128204518-378280275-is-europe-helping-iot-entrepreneurs-i-m-not-so-sure",
+	"fileLink" 			: null,
+	"blogContent"		: null,
+	"createdDate"		: "2014-11-28T18:25:43.511Z"
+}

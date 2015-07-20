@@ -6,7 +6,7 @@ define([
 	    model: Project,
 
 	    comparator: function(model) {
-	        return model.get('createdDate');
+	        return -new Date(model.get('createdDate'));
 	    }
     });
 });

@@ -15,8 +15,7 @@ define([
 
             routes: {
                 "": "home",
-                "project/:id": "project",
-                "projects/:id/blog": "legacyURL"
+                "project/:id": "project"
             },
 
             initialize: function () {
@@ -66,22 +65,6 @@ define([
                         console.log('error');
                     }
                 });
-            },
-
-            legacyURL: function(oldURL) {
-
-                var newURL;
-                console.log(oldURL);
-                switch(oldURL) {
-                    case 'xhnCxJg79giBCPBpi':
-                        newURL = 'project/agrockathon'
-                        break;
-                    case 'u2sGRsnXxCLEzzcH4':
-                        newURL = 'project/hackerinresidence'
-                        break;
-                }
-
-                this.navigate(newURL, {trigger: true}); 
-            },
+            }
         });
 });

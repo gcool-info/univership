@@ -1,0 +1,15 @@
+{
+	"url"				: "qtcpills",
+	"type"				: "individual",
+	"title" 			: "QTC Pills",
+	"abstract" 			: "Experimenting with Quantum Tunneling Composite materials.",
+	"logo"				: "assets/logos/qtcpillslogo.svg",
+	"photo"				: "assets/photos/qtcpillsintro.jpg",
+	"skills"			: ["coding"],
+	"video"				: "https://www.youtube.com/embed/0BMPaEKd0Xo?rel=0&amp;showinfo=0",
+	"githubLink"		: null,
+	"externalLink"		: "https://drive.google.com/drive/folders/0B-cpmUqy2OFTRFpwZ1YzeEJmMlU",
+	"fileLink" 			: null,
+	"blogContent"		: null,
+	"createdDate"		: "2015-01-11T18:25:43.511Z"
+}

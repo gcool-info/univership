@@ -2,7 +2,7 @@
 	"url"				: "25sketches",
 	"type"				: "individual",
 	"title" 			: "25 Sketches",
-	"abstract" 			: "Creating 25 sketches of everyday objects to start learning how to draw.",
+	"abstract" 			: "Learning sketching techniques through everyday objects.",
 	"logo"				: "assets/logos/25sketcheslogo.svg",
 	"photo"				: "assets/photos/25sketchesintro.jpg",
 	"skills"			: ["design"],
@@ -11,5 +11,5 @@
 	"externalLink"		: null,
 	"fileLink" 			: "https://drive.google.com/drive/folders/0B-cpmUqy2OFTfjlhTGdXWFdvOHdybW05MXhjSEVGY2ZYR2hHVE1Hc1g0a1FTRVpnRHBIbTQ",
 	"blogContent"		: null,
-	"createdDate"		: "10 Dec, 2014 23:15:00"
+	"createdDate"		: "2015-02-04T18:25:43.511Z"
 }

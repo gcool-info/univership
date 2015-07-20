@@ -1,0 +1,15 @@
+{
+	"url"				: "designofeverydaythings",
+	"type"				: "individual",
+	"title" 			: "Design of Everyday Things",
+	"abstract" 			: "Reading Don Norman's famous book.",
+	"logo"				: "assets/logos/designofeverydaythingslogo.svg",
+	"photo"				: "assets/photos/designofeverydaythingsintro.jpg",
+	"skills"			: ["design"],
+	"video"				: "https://www.youtube.com/embed/CPp80CfM2HQ?rel=0&amp;showinfo=0",
+	"githubLink"		: null,
+	"externalLink"		: "http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107",
+	"fileLink" 			: null,
+	"blogContent"		: null,
+	"createdDate"		: "2014-11-14T18:25:43.511Z"
+}

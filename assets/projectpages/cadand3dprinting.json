@@ -1,0 +1,15 @@
+{
+	"url"				: "cadand3dprinting",
+	"type"				: "individual",
+	"title" 			: "CAD & 3D Printing",
+	"abstract" 			: "Designing & printing a spherical 4-bar linkage mechanism.",
+	"logo"				: "assets/logos/cadand3dprintinglogo.svg",
+	"photo"				: "assets/photos/cadand3dprintingintro.jpg",
+	"skills"			: ["design"],
+	"video"				: "https://www.youtube.com/embed/cnQq637SJSc?rel=0&amp;showinfo=0",
+	"githubLink"		: null,
+	"externalLink"		: "https://www.youmagine.com/designs/spherical-4-bar-linkage-mechanism#!comments",
+	"fileLink" 			: null,
+	"blogContent"		: null,
+	"createdDate"		: "2014-12-12T18:25:43.511Z"
+}

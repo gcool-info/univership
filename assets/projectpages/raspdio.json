@@ -1,0 +1,15 @@
+{
+	"url"				: "raspdio",
+	"type"				: "individual",
+	"title" 			: "Raspdio",
+	"abstract" 			: "A smart internet radio.",
+	"logo"				: "assets/logos/raspdiologo.svg",
+	"photo"				: "assets/photos/raspdiointro.jpg",
+	"skills"			: ["coding", "design"],
+	"video"				: "https://www.youtube.com/embed/sbtpnE07F0E?rel=0&amp;showinfo=0",
+	"githubLink"		: "https://github.com/gcool-info/raspdio",
+	"externalLink"		: "http://www.instructables.com/id/Raspdio/",
+	"fileLink" 			: null,
+	"blogContent"		: null,
+	"createdDate"		: "2014-12-07T18:25:43.511Z"
+}

@@ -11,7 +11,14 @@ define(function (require) {
 				'multisidedplatforms',
 				'agrockathon',
 				'hackerinresidence',
-				'jsonsilo'
+				'jsonsilo',
+				'meteor',
+				'designofeverydaythings',
+				'euiot',
+				'opensesame',
+				'raspdio',
+				'cadand3dprinting',
+				'qtcpills'
 			];
 			var requests = [];
 
