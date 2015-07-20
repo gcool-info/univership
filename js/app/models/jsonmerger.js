@@ -9,7 +9,9 @@ define(function (require) {
 				'museomixplatform',
 				'25sketches',
 				'multisidedplatforms',
-				'agrockathon'
+				'agrockathon',
+				'hackerinresidence',
+				'jsonsilo'
 			];
 			var requests = [];
 

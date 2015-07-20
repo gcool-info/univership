@@ -76,6 +76,9 @@ define([
                     case 'xhnCxJg79giBCPBpi':
                         newURL = 'project/agrockathon'
                         break;
+                    case 'u2sGRsnXxCLEzzcH4':
+                        newURL = 'project/hackerinresidence'
+                        break;
                 }
 
                 this.navigate(newURL, {trigger: true}); 
