@@ -16,7 +16,7 @@ define([
             routes: {
                 "": "home",
                 "project/:id": "project",
-                "projects/:id": "legacyURL"
+                "projects/:id/blog": "legacyURL"
             },
 
             initialize: function () {
@@ -40,10 +40,6 @@ define([
                 this.loadSingleProject(projectId, function(projectModel) {
                     var projectView = new ProjectView({model : projectModel});
                 });
-            },
-
-            legacyURL: function() {
-
             },
 
             loadProjects: function(callback) {
@@ -70,6 +66,19 @@ define([
                         console.log('error');
                     }
                 });
-            }
+            },
+
+            legacyURL: function(oldURL) {
+
+                var newURL;
+                console.log(oldURL);
+                switch(oldURL) {
+                    case 'xhnCxJg79giBCPBpi':
+                        newURL = 'project/agrockathon'
+                        break;
+                }
+
+                this.navigate(newURL, {trigger: true}); 
+            },
         });
 });
