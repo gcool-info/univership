@@ -8,17 +8,17 @@
 		<% switch(project.get('skills').length) {  
 			case 3:
 		%>
-				<div class="col-xs-6 col-md-9"></div>
+				<div class="col-xs-5 col-md-9"></div>
 				<%
 				break;
 			case 2:
 		%>
-			<div class="col-xs-8 col-md-10"></div>
+			<div class="col-xs-7 col-md-10"></div>
 				<%
 				break;
 			case 1:
 		%>
-			<div class="col-xs-10 col-md-11"></div>
+			<div class="col-xs-9 col-md-11"></div>
 				<%
 				break;
 			}
@@ -58,7 +58,7 @@
 	<% } %>
 	<div class="row row-centered">
 		<% if (project.get('fileLink')) {  %>
-	    <div class="col-xs-2 col-centered">
+	    <div class="col-xs-4 col-md-2 col-centered">
 	    	<a class="text-center" href="<%= project.get('fileLink') %>" target="_blank">
 	    		<h1>
 	    			<i class="fa fa-folder-open-o"></i>
@@ -67,7 +67,7 @@
 	    	</a>
 		</div>
 		<% } if (project.get('githubLink')) {  %>
-	    <div class="col-xs-2 col-centered">
+	    <div class="col-xs-4 col-md-2 col-centered">
 	    	<a class="text-center" href="<%= project.get('githubLink') %>" target="_blank">
 	    		<h1>
 	    			<i class="fa fa-github"></i>
@@ -76,7 +76,7 @@
 	    	</a>
 		</div>
 		<% } if (project.get('externalLink')) {  %>
-	    <div class="col-xs-2 col-centered">
+	    <div class="col-xs-4 col-md-2 col-centered">
 	    	<a class="text-center" href="<%= project.get('externalLink') %>" target="_blank">
 	    		<h1>
 	    			<i class="fa fa-external-link"></i>
