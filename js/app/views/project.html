@@ -8,12 +8,12 @@
 		<% switch(project.get('skills').length) {  
 			case 3:
 		%>
-				<div class="col-xs-5 col-md-9"></div>
+				<div class="col-xs-3 col-md-9"></div>
 				<%
 				break;
 			case 2:
 		%>
-			<div class="col-xs-7 col-md-10"></div>
+			<div class="col-xs-6 col-md-10"></div>
 				<%
 				break;
 			case 1:
@@ -25,21 +25,21 @@
 		%>
 
 		<% if (project.get('skills').indexOf('design') != -1) {  %>
-		<div class="col-xs-2 col-md-1">
+		<div class="col-xs-3 col-md-1">
 			<img src="assets/logos/designskill-small.svg" />
 			<p class="small">design</p>
 		</div>
 		<% }
 			if (project.get('skills').indexOf('coding') != -1) {
 		%>
-		<div class="col-xs-2 col-md-1">
+		<div class="col-xs-3 col-md-1">
 			<img src="assets/logos/codingskill-small.svg" />
 			<p class="small">coding</p>
 		</div>
 		<% }
 			if (project.get('skills').indexOf('business') != -1) {
 		%>
-		<div class="col-xs-2 col-md-1">
+		<div class="col-xs-3 col-md-1">
 			<img src="assets/logos/businessskill-small.svg" />
 			<p class="small">business</p></div>
 		</div>

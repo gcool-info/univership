@@ -106,6 +106,10 @@ h1 {
 }
 
 /******** Twitter Bootstrap Customization ********/
+.navbar-default .navbar-toggle {
+	border: none;
+}
+
 .carousel-control {
 	text-shadow: none;
 }
@@ -128,7 +132,7 @@ h1 {
 }
 
 /******** Media Queries ********/
-@media (max-width: 480px) {
+@media (max-width: 568px) {
     body {
     	font-size: 20px;
     }
