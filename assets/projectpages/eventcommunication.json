@@ -1,0 +1,15 @@
+{
+	"url"				: "eventcommunication",
+	"type"				: "individual",
+	"title" 			: "Event Poster",
+	"abstract" 			: "A website template promoting events.",
+	"logo"				: "assets/logos/eventcommunicationlogo.svg",
+	"photo"				: "assets/photos/eventcommunicationphoto.jpg",
+	"skills"			: ["coding", "design"],
+	"video"				: "https://www.youtube.com/embed/yjIYv7uP6W4?rel=0&amp;showinfo=0",
+	"githubLink"		: "https://github.com/gcool-info/eventposter",
+	"externalLink"		: "http://gcool.info/eventposter/",
+	"fileLink" 			: null,
+	"blogContent"		: null,
+	"createdDate"		: "2015-01-15T18:25:43.511Z"
+}

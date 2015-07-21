@@ -1,0 +1,15 @@
+{
+	"url"				: "blender",
+	"type"				: "individual",
+	"title" 			: "Blender",
+	"abstract" 			: "3D animation & modelling",
+	"logo"				: "assets/logos/blenderlogo.svg",
+	"photo"				: "assets/photos/blenderphoto.jpg",
+	"skills"			: ["design"],
+	"video"				: "https://www.youtube.com/embed/F2EDOaQFQU0?rel=0&amp;showinfo=0",
+	"githubLink"		: null,
+	"externalLink"		: null,
+	"fileLink" 			: null,
+	"blogContent"		: null,
+	"createdDate"		: "2014-09-18T18:25:43.511Z"
+}

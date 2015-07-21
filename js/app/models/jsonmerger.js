@@ -18,7 +18,13 @@ define(function (require) {
 				'opensesame',
 				'raspdio',
 				'cadand3dprinting',
-				'qtcpills'
+				'qtcpills',
+				'eventcommunication',
+				'blender',
+				'ucdexploration',
+				'semanticweb',
+				'combatcontrol',
+				'emotionaldesign'
 			];
 			var requests = [];
 
