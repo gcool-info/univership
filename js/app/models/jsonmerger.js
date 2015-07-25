@@ -24,7 +24,8 @@ define(function (require) {
 				'ucdexploration',
 				'semanticweb',
 				'combatcontrol',
-				'emotionaldesign'
+				'emotionaldesign',
+				'hardwarestartup'
 			];
 			var requests = [];
 
