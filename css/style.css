@@ -16,6 +16,10 @@ h1 {
 	font-weight: bold;
 }
 
+p {
+	margin-bottom: 2em;
+}
+
 .jumbotron .small {
 	font-size: 0.8em;	
 }
@@ -102,7 +106,7 @@ h1 {
 }
 
 .container.blog {
-	width: 70%;
+	width: 60%;
 }
 
 /******** Twitter Bootstrap Customization ********/

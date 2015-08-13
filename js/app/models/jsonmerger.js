@@ -25,7 +25,8 @@ define(function (require) {
 				'semanticweb',
 				'combatcontrol',
 				'emotionaldesign',
-				'hardwarestartup'
+				'hardwarestartup',
+				'offlineandonline'
 			];
 			var requests = [];
 
