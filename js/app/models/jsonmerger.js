@@ -26,7 +26,8 @@ define(function (require) {
 				'combatcontrol',
 				'emotionaldesign',
 				'hardwarestartup',
-				'offlineandonline'
+				'offlineandonline',
+				'customersupport'
 			];
 			var requests = [];
 

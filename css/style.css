@@ -16,8 +16,8 @@ h1 {
 	font-weight: bold;
 }
 
-p {
-	margin-bottom: 2em;
+.blog p {
+	margin-top: 2em;
 }
 
 .jumbotron .small {
