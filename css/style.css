@@ -16,6 +16,10 @@ h1 {
 	font-weight: bold;
 }
 
+.small-margin-top {
+	margin-top: 0.5em;
+}
+
 .blog p {
 	margin-top: 2em;
 }

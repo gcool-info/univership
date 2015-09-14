@@ -27,7 +27,9 @@ define(function (require) {
 				'emotionaldesign',
 				'hardwarestartup',
 				'offlineandonline',
-				'customersupport'
+				'customersupport',
+				'ecommerceandagile',
+				'productmanagement'
 			];
 			var requests = [];
 
