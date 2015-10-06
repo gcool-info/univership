@@ -29,7 +29,8 @@ define(function (require) {
 				'offlineandonline',
 				'customersupport',
 				'ecommerceandagile',
-				'productmanagement'
+				'productmanagement',
+				'diary'
 			];
 			var requests = [];
 
