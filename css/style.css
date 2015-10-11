@@ -113,6 +113,11 @@ h1 {
 	width: 60%;
 }
 
+.panel-image {
+	border-top: 3px solid white;
+	opacity: 0.7;
+}
+
 /******** Twitter Bootstrap Customization ********/
 .navbar-default .navbar-toggle {
 	border: none;
@@ -137,6 +142,13 @@ h1 {
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+}
+.panel-default {
+	border-color: rgba(101,153,204,0.3);
+}
+.panel-default > .panel-heading {
+	background-color: rgba(101,153,204,0.3);
+	background-image: none;
 }
 
 /******** Media Queries ********/
