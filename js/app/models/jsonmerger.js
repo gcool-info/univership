@@ -30,7 +30,8 @@ define(function (require) {
 				'customersupport',
 				'ecommerceandagile',
 				'productmanagement',
-				'diary'
+				'diary',
+				'qwake'
 			];
 			var requests = [];
 
