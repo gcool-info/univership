@@ -2,31 +2,113 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=yes">
-        <title>Univership</title>
-        <meta name="description" content="An intense, one year program to learn, meet amazing people & gain practical experience." />
-        <meta http-equiv="X-Frame-Options" content="GOFORIT">
-		<!-- Search Engines & Social Media -->
-		<meta name="twitter:card" value="Univership">
+        <title>univership</title>
+        <meta name="description" content="Re-inventing internships for 21st century education" />
+        <link rel="icon" type="image/png" href="assets/img/favicon-16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="assets/img/favicon-48.png" sizes="48x48">
+		<link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
 
-		<meta property="og:title" content="Univership" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://univership.org/" />
-        <meta property="og:image" content="http://univership.org/assets/logos/univershiplogo.jpg" />
-        <meta property="og:description" content="An intense, one year program to learn, meet amazing people & gain practical experience." />
-		<!-- -->
+        <!-- Google+ / Schema.org -->
+        <link rel="author" href="http://univership.org">
+		<link rel="publisher" href="http://univership.org">
+		<meta itemprop="name" content="univership">
+		<meta itemprop="description" content="Re-inventing internships for 21st century education">
+		<meta itemprop="image" content="http://www.univership.org/assets/img/univership-logo.jpg">
 
-		<link rel="icon" type="image/png" href="assets/logos/favicon-16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="assets/logos/favicon-48.png" sizes="48x48">
-		<link rel="icon" type="image/png" href="assets/logos/favicon-32.png" sizes="32x32">
+		<!-- Search Engines -->
+		<meta name="author" content="univership">
+		<meta name="description" content="Re-inventing internships for 21st century education">
+		<link rel="canonical" href="http://www.univership.org">
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@univership">
+		<meta name="twitter:creator" content="@univership">
+		<meta name="twitter:title" content="univership">
+		<meta name="twitter:description" content="Re-inventing internships for 21st century education">
+		<meta name="twitter:image" content="http://www.univership.org/assets/img/univership-twitter-card.jpg">
+
+		<!-- Facebook / Open Graph -->
+		<meta property="og:url" content="http://www.univership.org">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="univership">
+		<meta property="og:image" content="http://www.univership.org/assets/img/univership-facebook.jpg">
+		<meta property="og:description" content="Re-inventing internships for 21st century education">
+		<meta property="og:site_name" content="univership">
+		<meta property="article:author" content="http://univership.org">
+		<meta property="article:publisher" content="http://univership.org">
 
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css" />
+
+
+		<script type="application/ld+json">
+	      {
+	        "@context": "http://schema.org",
+	        "@type": "Organization",
+	        "name": "univership",
+	        "description": "Re-inventing internships for 21st century education",
+	        "url": "http://univership.org",
+	        "founder": {
+	        	"@type": "Person",
+	        	"email": "george@univership.org",
+	        	"familyName": "Koulouris",
+	        	"givenName": "George",
+	        	"sameAs" : [
+	        		"https://twitter.com/GCoolInfo",
+	        		"https://uk.linkedin.com/in/george-koulouris-243828a6"
+	        	]
+	        },
+	        "logo": "http://www.univership.org/assets/img/univership-logo.jpg",
+	        "sameAs": [
+	          "http://www.facebook.com/univership",
+	          "http://www.twitter.com/univership",
+	          "https://www.pinterest.com/univership/"
+	        ]
+	      }
+	    </script>
+
+	    <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-55679725-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</head>
 	<body>
-		<div class="header"></div>
-		<div class="full-page"></div>
-		<script data-main="js/app" src="js/require.js"></script>
+		<div class="container">
+			<div class="row">
+			    <div class="col-xs-10 col-sm-10 col-md-7 col-center-block">
+			    	<h1><span class="huge-text">u</span>nivership</h1>
+					<hr/>
+					<h2> We are re-inventing internships for 21st century education.</h2>
+			    </div>
+			</div>
+			<div class="row">
+			    <div class="col-xs-8 col-sm-8 col-md-5 col-center-block">
+			    	<div class="input-group" id="email-box">
+				      <input type="text" class="form-control" placeholder="ENTER YOUR EMAIL" id="email-input">
+				      <span class="input-group-btn" id="email-registration-group">
+				        <button class="btn btn-default" id="email-submit" type="button">GO</button>
+				      </span>
+				    </div>
+				    <div id="confirmation">
+				    	<h3>Thank you.</h3>
+				    	<span id="invite-friend"><u>How about inviting a friend?</u></span>
+				    </div>
+				</div>
+			</div>
+			<div class="push"></div>
+		</div>
+		<div class="footer">
+			<p>Launching in February 2016</p>
+			<p><a href="mailto:george@univership.org">contact</a></p>
+		</div>
+		<script src="scripts.js"></script>
 	</body>
 </html>
