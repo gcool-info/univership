@@ -50,17 +50,26 @@ var enterKeyPressed = function (e)
 };
 
 var submitEmail = function(email) {
-	var r = new XMLHttpRequest();
-	r.open("GET", "newsubscriber.php", true);
-	r.onreadystatechange = function () {
-		if (r.readyState != 4 || r.status != 200) {
-			return false;
-		} 
-		else {
-			confirmation.toggleConfirmation();
-		}
+	var request = new XMLHttpRequest();
+	var params = 'email=' + encodeURIComponent(email);
+	request.open('POST', 'newsubscriber.php', true);
+	request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	request.onreadystatechange = function () {
+	  if (request.readyState != 4 || request.status != 200) return;
+	  confirmation.toggleConfirmation();
 	};
-	r.send("email=" + email);
+	request.send(params);
+};
+
+function checkLegacyURL() {
+	var url = window.location.href;
+	var endPattern = /(.*)(#.*)/i;
+	var result = url.match(endPattern);
+	if ((result) && (result.length === 3)) {
+		var baseURL = result[1].charAt(result[1].length - 1) === '/' ? result[1] : result[1] + '/';
+		var redirectURL = baseURL + 'george/' + result[2];
+		window.location = redirectURL;
+	}
 };
 
 function Confirmation() {
@@ -83,3 +92,5 @@ function Confirmation() {
 		}
 	}
 };
+
+checkLegacyURL();
